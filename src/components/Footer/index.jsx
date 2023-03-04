@@ -9,7 +9,7 @@ const FooterContainer = styled.footer`
 
   .container__image {
     width: 47%;
-    background-image: url("/src/assets/cyberpunk-banner.png");
+    background-image: url("/assets/cyberpunk-banner.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

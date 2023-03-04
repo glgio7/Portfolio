@@ -70,7 +70,7 @@ const App = () => {
     <Container>
       <section>
         <div className="images-box">
-          <img className="images-box__main" src="/src/assets/github-logo.png" />
+          <img className="images-box__main" src="/assets/github-logo.png" />
           <span className="images-box__span">Lorem ipsum dolor sit amet.</span>
         </div>
         <article>
@@ -94,7 +94,7 @@ const App = () => {
         <div className="images-box">
           <img
             className="images-box__main"
-            src="/src/assets/glgioprofile.jpg"
+            src="/assets/glgioprofile.jpg"
           />
           <span className="images-box__span">Lorem ipsum dolor sit amet.</span>
         </div>
@@ -121,7 +121,7 @@ const App = () => {
         <div className="images-box">
           <img
             className="images-box__main"
-            src="/src/assets/projects_skills.png"
+            src="/assets/projects_skills.png"
           />
           <span className="images-box__span">Lorem ipsum dolor sit amet.</span>
         </div>
@@ -145,7 +145,7 @@ const App = () => {
         <div className="images-box">
           <img
             className="images-box__main"
-            src="/src/assets/contact-image.jpg"
+            src="/assets/contact-image.jpg"
           />
           <span className="images-box__span">Lorem ipsum dolor sit amet.</span>
         </div>
