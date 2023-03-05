@@ -15,6 +15,7 @@ const GlobalCSS = createGlobalStyle`
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {

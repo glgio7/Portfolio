@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 const SectionContainer = styled.section`
   min-height: calc(100vh - 48px);
+  width: 100%;
 
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
   h1 {
     width: 100%;
     font-size: 2rem;
