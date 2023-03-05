@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalCSS = createGlobalStyle`
+const GlobalCSS = createGlobalStyle`
 
 *{
   padding: 0;
@@ -9,20 +9,23 @@ export const GlobalCSS = createGlobalStyle`
   box-sizing: border-box;
 
   list-style: none;
-}
 
-#root {
-  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 a {
   text-decoration: none;
 }
+
 body {
   max-width: 100vw;
-  overflow-x: hidden;
   min-height: 100vh;
+
+  overflow-x: hidden;
+
   background: rgb(10,10,10);
-background: linear-gradient(180deg, rgba(30,30,30) 0%, rgba(100,100,100,1) 100%);
+  background: linear-gradient(180deg, rgba(30,30,30) 0%, rgba(100,100,100,1) 100%);
 }
 `;
+
+export default GlobalCSS

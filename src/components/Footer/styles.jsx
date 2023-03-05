@@ -7,7 +7,7 @@ const FooterContainer = styled.footer`
 
   background-color: #101010;
 
-  padding: 1rem 2rem;
+  padding: 2rem;
 
   .container__image {
     width: 47%;

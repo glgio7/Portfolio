@@ -1,145 +1,61 @@
+import Section from "../../components/Section";
 import Container from "./styles";
 
-const App = () => {
+const openingParagraphs = [
+  "Passionate about turning ideas into reality, bringing screens to life, and creating unique experiences for users is what motivates me! Combining technical skills and creativity to build amazing interfaces that captivate and surprise.",
+  "With the power of coding, I turn designs into living code, building tomorrow's web with every line of code I write.",
+  "All successful projects require professionals from different fields, each in their own specialty, to make it real. That's technology! My dedication and talent allow me to create dynamic websites that impress and inspire.",
+  "Let's unite art, skill, and technique and keep transforming the web experience!",
+  ];
+  const aboutMeParagraphs = [
+    "Currently at 26 years old, my first contact with a computer was through games, over 20 years ago. I have always been very curious and games fascinated me, especially when they had interesting stories. So, I quickly developed a huge interest in learning and along with it, skills in conducting research.",
+    "In 2010, when Youtube began to gain popularity in Brazil, I started monetizing some design work for channels. I used tools like Photoshop, After Effects, and Cinema 4D, which gave me knowledge in UI/UX. During this time, I took a technical course in IT and had my first contact with HTML. Years later, encouraged by an uncle for whom I am very grateful, I resumed my studies and became a programmer.",
+    'I have always had a natural ability to observe reality, identify patterns, and make abstractions. Despite innate behavioral tendencies in each person, I believe this skill can be developed by anyone with time, dedication, and the right influences. In addition to being a technology enthusiast, I also have a great interest in psychology. As they say, "we are the average of the people we spend the most time with," and I am grateful for the good influences in my life.',
+    ];
+    const skillsList = [
+      "Knowledge in: HTML | CSS | SASS | Javascript | React.js + Frameworks | NodeJS",
+      "General knowledge in logic, grammar, orthogonality, abstractions, and pattern recognition set me apart as a professional. Along with these general skills, I possess extensive knowledge in HTML, CSS, Javascript, and especially React.js.",
+      "I am most interested in development with React. In my work, I frequently use React Hooks, SPA and WPA concepts, API consumption and creation with JSON, and Styled Components.",
+      "Currently, I am studying Systems Analysis and Development at UniAmérica and seek to participate in bootcamps at DIO whenever possible. Additionally, I am currently part of a scholarship program at Alura offered by Oracle."
+      ];
+      const contactMe = [
+        "If you're interested in my work, there are 3 reasons why you can get in touch with me.",
+        "To discuss a proposal or idea you have in mind that can be executed with my skills.",
+        "To clarify any doubts you may have about my work or development process.",
+        "To make suggestions on how we can improve the project we're working on together.",
+        'Just click on the "contact" button or link in the navigation menu, and you\'ll be redirected.',
+        "Thank you for visiting, and I look forward to working together!",
+      ];
+
+const Home = () => {
   return (
     <Container>
-      <section>
-        <div className="images-box">
-          <img className="images-box__main" src="/assets/github-logo.png" />
-          <button className="images-box__button">Visitar GitHub</button>
-        </div>
-        <article>
-          <h1>Front-End Developer</h1>
-          <p>
-            Apaixonado por transformar ideias em realidade, trazer vida para as
-            telas e criar experiências únicas para os usuários é o que me
-            motiva! Unir habilidades técnicas e criatividade para construir
-            interfaces incríveis que cativam e surpreendem.
-          </p>
-          <p>
-            Com o poder da codificação, transformo designs em código vivo,
-            construindo a web do amanhã com cada linha de código que escrevo.
-          </p>
-          <p>
-            Todos os projetos de sucesso precisaram de profissionais de diversas
-            áreas, cada um em sua especialidade, para tornar aquilo real. Isso é
-            tecnologia! Minha dedicação e talento me permitem criar sites
-            dinâmicos que impressionam e inspiram.
-          </p>
-          <p>
-            Vamos unir arte, habilidade e técnica e continuar transformando a
-            experiência web!
-          </p>
-        </article>
-      </section>
-      <section>
-        <div className="images-box">
-          <img className="images-box__main" src="/assets/glgioprofile.jpg" />
-          <button className="images-box__button">
-            Visitar LinkedIn
-          </button>
-        </div>
-        <article>
-          <h1>About me</h1>
-          <p>
-            Com 26 anos de idade, tive meu primeiro contato com um computador há
-            mais de 20 anos. Como toda criança, comecei jogando e logo
-            desenvolvi habilidades em fazer pesquisas. Sempre fui muito curioso
-            e os jogos me encantavam, principalmente quando contavam histórias
-            interessantes que eu queria saber mais.
-          </p>
-          <p>
-            Em 2010, quando o Youtube começou a ganhar popularidade no Brasil,
-            comecei a monetizar alguns trabalhos de design para canais. Utilizei
-            ferramentas como Photoshop, After Effects e Cinema 4D, o que me
-            proporcionou conhecimentos em UI/UX. Nessa época, fiz um curso
-            técnico em TI e tive meu primeiro contato contato com HTML. Anos
-            depois, por incentivo de um tio que sou muito grato, retomei os
-            estudos e me tornei programador.
-          </p>
-          <p>
-            Sempre tive uma habilidade natural de observar a realidade,
-            identificar padrões e fazer abstrações. Apesar de tendências
-            comportamentais inatas a cada pessoa, acredito que essa habilidade
-            possa ser desenvolvida por qualquer um, com tempo, dedicação e as
-            influências certas. Além de ser um entusiasta da tecnologia, também
-            tenho grande interesse em psicologia. Como se costuma dizer, "somos
-            a média das pessoas com quem mais convivemos", e eu sou grato pelas
-            boas influências em minha vida.
-          </p>
-          <p>
-            Nesta sessão, gostaria de expressar minha gratidão a familiares,
-            amigos e pessoas públicas que me influenciaram a me tornar uma
-            pessoa melhor.
-          </p>
-        </article>
-      </section>
-      <section>
-        <div className="images-box">
-          <img className="images-box__main" src="/assets/projects_skills.png" />
-          <button className="images-box__button">
-            Visitar Projetos
-          </button>
-        </div>
-        <article>
-          <h1>Skills and Jobs</h1>
-          <p>
-            Conhecimentos em: HTML | CSS | SASS | Javascript | React.js +
-            FrameWorks | NodeJS
-          </p>
-          <p>
-            Conhecimentos gerais como lógica, gramática, ortogonalidade,
-            abstrações e percepção de padrões me diferenciam como profissional.
-            Além destes conhecimentos gerais, possuo amplo conhecimento em HTML,
-            CSS, Javascript, e em especial React.js.
-          </p>
-          <p>
-            Desenvolvimento com React é o que mais me interessa. Em meus
-            trabalhos frequentemente utilizo React Hooks, conceitos de SPA e
-            WPA, consumo e criação de APIs com JSON e Styled Components.
-          </p>
-          <p>
-            Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na
-            UniAmérica e procuro participar de bootcamps na DIO sempre que
-            possível. Além disso, atualmente faço parte de um programa de bolsa
-            de estudos na Alura oferecido pela Oracle.
-          </p>
-        </article>
-      </section>
-      <section>
-        <div className="images-box">
-          <img className="images-box__main" src="/assets/contact-image.jpg" />
-          <button className="images-box__button">
-            Entrar em contato
-          </button>
-        </div>
-        <article>
-          <h1>Contact-me</h1>
-          <p>
-            Se você se interessou pelo meu trabalho, há 3 motivos pelos quais
-            você pode entrar em contato comigo.
-          </p>
-          <p>
-            Para discutir uma proposta ou ideia que você tenha em mente e que
-            possa ser executada com as minhas habilidades.
-          </p>
-          <p>
-            Para esclarecer qualquer dúvida que possa ter sobre o meu trabalho
-            ou processo de desenvolvimento.
-          </p>
-          <p>
-            Para fazer sugestões sobre como podemos melhorar o projeto em que
-            estamos trabalhando juntos. Basta clicar no botão entrar em contato
-            ou em "contato" no menu de navegação, e você será redirecionado.
-          </p>
-          <p>
-            Agradeço pela sua visita e aguardo ansiosamente para trabalharmos
-            juntos!
-          </p>
-        </article>
-      </section>
+      <Section
+        imagePath={"/assets/github-logo.png"}
+        sectionTitle={"Front-End Developer"}
+        buttonSpan={"Visit GitHub"}
+        textContent={openingParagraphs}
+      />
+      <Section
+        imagePath={"/assets/glgioprofile.jpg"}
+        sectionTitle={"About me"}
+        buttonSpan={"Visit LinkedIn"}
+        textContent={aboutMeParagraphs}
+      />
+      <Section
+        imagePath={"/assets/projects_skills.png"}
+        sectionTitle={"Skills and Jobs"}
+        buttonSpan={"Visit Projects"}
+        textContent={skillsList}
+      />
+      <Section
+        imagePath={"/assets/contact-image.jpg"}
+        sectionTitle={"Contact-me"}
+        buttonSpan={"Contact me"}
+        textContent={contactMe}
+      />
     </Container>
   );
 };
 
-export default App;
+export default Home;
