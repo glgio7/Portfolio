@@ -18,7 +18,6 @@ export const GlobalCSS = createGlobalStyle`
 a {
   text-decoration: none;
 }
-
 body {
   max-width: 100vw;
   overflow-x: hidden;
