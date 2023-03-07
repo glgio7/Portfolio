@@ -8,9 +8,10 @@ const FooterContainer = styled.footer`
   background-color: #101010;
 
   padding: 2rem;
+  margin-top: 3rem;
 
   .container__image {
-    width: 47%;
+    width: 45%;
     background-image: url("/assets/cyberpunk-banner.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,14 +22,6 @@ const FooterContainer = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
-
-    h3 {
-      background-color: rgba(10, 10, 10, 0.85);
-      
-      padding: 1rem;
-      
-      border-radius: 16px;
-    }
   }
 
   .container__description {
@@ -36,7 +29,7 @@ const FooterContainer = styled.footer`
     flex-direction: column;
     justify-content: center;
 
-    width: 50%;
+    width: 55%;
 
     padding: 0 2rem;
   }
@@ -52,7 +45,7 @@ const FooterContainer = styled.footer`
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
-  }
+  
 
   .container__image{
     width: 90%;
@@ -69,12 +62,11 @@ const FooterContainer = styled.footer`
     
     padding: 0;
 
-    width: 90%;
+    width: 80%;
 
     text-align: center;
-
-    /* margin-block: 0px; */
   }
+}
 `;
 
 export default FooterContainer;

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import HeaderContainer from "./styles";
 
-const Header = () => {
+const Header = ( { scrolled }) => {
   return (
-    <HeaderContainer>
+    <HeaderContainer scrolled={scrolled}>
       <h1><span>Dev. Giovane Lucas </span><span>| Portfolio</span></h1>
       <ul className="lista-navegacao">
         <Link to={'/'}>

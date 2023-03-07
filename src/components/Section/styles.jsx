@@ -7,6 +7,9 @@ const SectionContainer = styled.section`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+
+  padding: 0 2rem;
+
   h1 {
     width: 100%;
     font-size: 2rem;
@@ -36,7 +39,7 @@ const SectionContainer = styled.section`
     border: none;
     border-radius: 6px;
 
-    color: rgba(0,55,200,1);
+    color: rgba(0, 55, 200, 1);
 
     font-size: 1rem;
     font-weight: bold;

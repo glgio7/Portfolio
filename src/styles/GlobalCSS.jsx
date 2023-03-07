@@ -19,7 +19,7 @@ a {
 }
 
 body {
-  max-width: 100vw;
+width: 100%;
   min-height: 100vh;
 
   overflow-x: hidden;

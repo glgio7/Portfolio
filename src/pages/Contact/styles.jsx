@@ -4,9 +4,14 @@ const ContactContainer = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: calc(100vh - 208px);
 
-  padding: 2rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+  height: calc(100vh - 48px);
+
+  padding: 0 2rem;
+  padding-top: 2rem;
 
   form {
     display: flex;
@@ -48,6 +53,9 @@ const ContactContainer = styled.main`
     &:hover{
         background-color: rgba(0,55,200,1);
     }
+  }
+  @media screen and (max-width: 900px){
+    height: calc(100vh - 108px); 
   }
 `;
 
