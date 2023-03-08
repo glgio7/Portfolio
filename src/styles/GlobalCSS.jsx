@@ -19,14 +19,15 @@ a {
 }
 
 body {
-width: 100%;
+  width: 100%;
   min-height: 100vh;
 
   overflow-x: hidden;
+  overflow-y: scroll;
 
   background: rgb(10,10,10);
   background: linear-gradient(180deg, rgba(30,30,30) 0%, rgba(100,100,100,1) 100%);
 }
 `;
 
-export default GlobalCSS
+export default GlobalCSS;

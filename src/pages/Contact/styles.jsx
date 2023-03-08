@@ -1,60 +1,60 @@
 import styled from "styled-components";
 
-const ContactContainer = styled.main`
+const Form = styled.form`
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
 
-  overflow-y: scroll;
-  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 1rem;
 
-  height: calc(100vh - 48px);
+  width: 80%;
+  background-color: #fff;
 
-  padding: 0 2rem;
-  padding-top: 2rem;
-
-  form {
-    display: flex;
-    flex-direction: column;
-    
-    width: 100%;
-  }
+  border-radius: 10px;
 
   label {
     font-size: 1rem;
     font-weight: bold;
-    
-    color: #fff;
-    
+
+    color: #000;
+
     margin-block: 1rem;
   }
 
   input {
     padding: 0.25rem 1rem;
-    
+
     background-color: #101010;
     color: #fff;
-    
+
     border: none;
-  }
+    
+    height: 42px;
   
+    border-radius: 6px;
+  }
+
   textarea {
     padding: 0.25rem 1rem;
 
     min-height: 200px;
     min-width: 100%;
-    
+
     color: #fff;
     background-color: #101010;
 
     border: none;
+    border-radius: 6px 6px 0 0;
+    
   }
+
 
   .submit-button {
     cursor: pointer;
 
     border: none;
-    border-radius: 6px;
+    border-radius: 0 0 6px 6px;
 
     height: 3rem;
 
@@ -70,9 +70,6 @@ const ContactContainer = styled.main`
       background-color: rgba(0, 55, 200, 1);
     }
   }
-  @media screen and (max-width: 900px) {
-    height: calc(100vh - 108px);
-  }
 `;
 
-export default ContactContainer;
+export default Form;

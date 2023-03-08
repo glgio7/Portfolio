@@ -17,8 +17,8 @@ const Header = ({ scrolled }) => {
         <a href="https://linkedin.com/in/giovane-lucas/" target="_blank">
           <li className="lista-navegacao__item">About</li>
         </a>
-        <Link to={"/jobs"}>
-          <li className="lista-navegacao__item">Jobs</li>
+        <Link to={"/projects"}>
+          <li className="lista-navegacao__item">Projects</li>
         </Link>
         <Link to={"/contact"}>
           <li className="lista-navegacao__item">Contact</li>

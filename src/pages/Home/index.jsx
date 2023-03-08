@@ -1,8 +1,6 @@
 import { useRef, useState } from "react";
-import Header from "../../components/Header";
-import Container from "./styles";
+import Container from "../../components/Container";
 import Section from "../../components/Section";
-import Footer from "../../components/Footer";
 
 const openingParagraphs = [
   "Passionate about turning ideas into reality, bringing screens to life, and creating unique experiences for users is what motivates me! Combining technical skills and creativity to build amazing interfaces that captivate and surprise.",
@@ -31,20 +29,10 @@ const contactMe = [
 ];
 
 const Home = () => {
-  const container = useRef();
-  const [scrolled, setScrolled] = useState(false);
-
-  const handleScroll = () => {
-    container.current.scrollTop >= 200 ? setScrolled(true) : setScrolled(false);
-  };
 
   return (
     <>
-      <Header scrolled={scrolled} />
-      <Container
-        ref={container}
-        onScroll={handleScroll}
-      >
+        <Container>
         <Section
           imagePath={"/assets/github-logo.png"}
           sectionTitle={"Front-End Developer"}
@@ -57,23 +45,27 @@ const Home = () => {
           sectionTitle={"About me"}
           buttonSpan={"Visit LinkedIn"}
           textContent={aboutMeParagraphs}
-          route={'https://linkedin.com/in/giovane-lucas/'}
+          route={"https://linkedin.com/in/giovane-lucas/"}
         />
         <Section
           imagePath={"/assets/projects_skills.png"}
-          sectionTitle={"Skills and Jobs"}
+          sectionTitle={"Skills and Projects"}
           buttonSpan={"Visit Projects"}
           textContent={skillsList}
-          route={'/jobs'}
+          route={"/projects"}
         />
         <Section
           imagePath={"/assets/contact-image.jpg"}
           sectionTitle={"Contact-me"}
           buttonSpan={"Get in touch"}
           textContent={contactMe}
-          route={'/contact'}
+          route={"/contact"}
         />
-        <Footer />
+        <a href="https://glgio7-vercel-app.translate.goog/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp">
+          <div className="translator">
+            <img src="/assets/pt-br.png" alt="Icone Brasil - por FlatIcon" />
+          </div>
+        </a>
       </Container>
     </>
   );

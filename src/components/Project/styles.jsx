@@ -1,31 +1,17 @@
 import styled from "styled-components";
 
-const JobsContainer = styled.main`
+const ProjectContainer = styled.section`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: space-evenly;
 
-  overflow-y: scroll;
-  overflow-x: hidden;
+  width: 100%;
+  min-height: 200px;
 
-  height: calc(100vh - 48px);
-
-  padding: 0 2rem;
-  padding-top: 2rem;
+  margin-block: 2rem;
 
   img {
     width: 100%;
-  }
-
-  section {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    width: 100%;
-    min-height: 200px;
-
-    margin-block: 1rem;
   }
 
   .image-box {
@@ -43,14 +29,17 @@ const JobsContainer = styled.main`
     border-radius: 20px 20px 0 0;
   }
 
-  .image-box span{
+  .image-box span {
     background-color: rgba(0, 55, 200, 1);
     color: #fff;
-    
+    padding: 0.5rem 0;
+
+    font-weight: bold;
+
     width: 180px;
 
     text-align: center;
-    
+
     border-radius: 0 0 20px 20px;
   }
 
@@ -67,23 +56,17 @@ const JobsContainer = styled.main`
   }
 
   @media screen and (max-width: 900px) {
-    height: calc(100vh - 108px);
+    flex-direction: column;
+    align-items: center;
 
-    section {
-      flex-direction: column;
-
-      min-height: initial;
-    }
+    min-height: initial;
 
     article {
       margin-top: 1rem;
 
-      border-radius: 10px;
-
-      width: 100%;
-      height: 144px;
+      width: 80%;
     }
   }
 `;
 
-export default JobsContainer;
+export default ProjectContainer;

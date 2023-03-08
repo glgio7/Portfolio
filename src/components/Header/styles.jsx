@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const HeaderContainer = styled.header`
+  position: fixed;
+  top: 0;
+
   height: 48px;
   width: 100vw;
 
@@ -32,8 +35,8 @@ const HeaderContainer = styled.header`
 
     transition: all 300ms;
 
-    &:hover{
-opacity: .8;
+    &:hover {
+      opacity: 0.8;
     }
   }
 

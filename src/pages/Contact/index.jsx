@@ -1,14 +1,14 @@
-import ContactContainer from "./styles";
 import Header from "../../components/Header"
-import Footer from "../../components/Footer";
+import Container from "../../components/Container";
+import Form from "./styles";
 
 const ContactPage = () => {
 
     return (
         <>
         <Header/>
-        <ContactContainer>
-        <form>
+        <Container>
+        <Form>
             <label htmlFor="name">Nome:</label>
             <input type="text" id="name" name="name" required />
             <label htmlFor="email">E-mail:</label>
@@ -16,9 +16,8 @@ const ContactPage = () => {
             <label htmlFor="message">Mensagem:</label>
             <textarea id="message" name="message" required></textarea>
             <input className="submit-button" type="submit" value="Enviar"/>
-        </form>
-        <Footer/>
-        </ContactContainer>
+        </Form>
+        </Container>
         </>
     )
 }
