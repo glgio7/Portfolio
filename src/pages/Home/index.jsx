@@ -61,11 +61,6 @@ const Home = () => {
           textContent={contactMe}
           route={"/contact"}
         />
-        <a href="https://glgio7-vercel-app.translate.goog/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp">
-          <div className="translator">
-            <img src="/assets/pt-br.png" alt="Icone Brasil - por FlatIcon" />
-          </div>
-        </a>
       </Container>
     </>
   );
