@@ -7,7 +7,7 @@ const ContactContainer = styled.main`
 
   overflow-y: scroll;
   overflow-x: hidden;
-  
+
   height: calc(100vh - 48px);
 
   padding: 0 2rem;
@@ -16,25 +16,41 @@ const ContactContainer = styled.main`
   form {
     display: flex;
     flex-direction: column;
+    
     width: 100%;
   }
 
   label {
     font-size: 1rem;
     font-weight: bold;
+    
     color: #fff;
+    
     margin-block: 1rem;
   }
 
-  input{
-    padding: .25rem;
+  input {
+    padding: 0.25rem 1rem;
+    
+    background-color: #101010;
+    color: #fff;
+    
+    border: none;
   }
-
+  
   textarea {
+    padding: 0.25rem 1rem;
+
     min-height: 200px;
+    min-width: 100%;
+    
+    color: #fff;
+    background-color: #101010;
+
+    border: none;
   }
 
-  .submit-button{
+  .submit-button {
     cursor: pointer;
 
     border: none;
@@ -49,13 +65,13 @@ const ContactContainer = styled.main`
     font-weight: bold;
 
     transition: all 300ms;
-    
-    &:hover{
-        background-color: rgba(0,55,200,1);
+
+    &:hover {
+      background-color: rgba(0, 55, 200, 1);
     }
   }
-  @media screen and (max-width: 900px){
-    height: calc(100vh - 108px); 
+  @media screen and (max-width: 900px) {
+    height: calc(100vh - 108px);
   }
 `;
 

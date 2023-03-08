@@ -1,21 +1,26 @@
 import { Link } from "react-router-dom";
 import HeaderContainer from "./styles";
 
-const Header = ( { scrolled }) => {
+const Header = ({ scrolled }) => {
   return (
     <HeaderContainer scrolled={scrolled}>
-      <h1><span>Dev. Giovane Lucas </span><span>| Portfolio</span></h1>
+    <Link to={"/"}>
+      <h1>
+        <span>Dev. Giovane Lucas </span>
+        <span>| Portfolio</span>
+      </h1>
+      </Link>
       <ul className="lista-navegacao">
-        <Link to={'/'}>
+        <Link to={"/"}>
           <li className="lista-navegacao__item">Home</li>
         </Link>
-        <a href="">
+        <a href="https://linkedin.com/in/giovane-lucas/" target="_blank">
           <li className="lista-navegacao__item">About</li>
         </a>
-        <a href="">
+        <Link to={"/jobs"}>
           <li className="lista-navegacao__item">Jobs</li>
-        </a>
-        <Link to={'/contact'}>
+        </Link>
+        <Link to={"/contact"}>
           <li className="lista-navegacao__item">Contact</li>
         </Link>
       </ul>

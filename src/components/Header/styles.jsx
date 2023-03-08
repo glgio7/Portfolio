@@ -31,6 +31,10 @@ const HeaderContainer = styled.header`
     align-items: center;
 
     transition: all 300ms;
+
+    &:hover{
+opacity: .8;
+    }
   }
 
   span:first-child {
@@ -52,7 +56,9 @@ const HeaderContainer = styled.header`
   .lista-navegacao__item {
     margin-inline: 1rem;
 
-    color: ${({ scrolled }) => (scrolled ? "#101010" : "#fff")};
+    font-weight: bold;
+
+    color: ${({ scrolled }) => (scrolled ? "rgba(0, 55, 200, 1)" : "#fff")};
 
     transition: all 300ms;
 

@@ -26,7 +26,7 @@ const contactMe = [
   "To discuss a proposal or idea you have in mind that can be executed with my skills.",
   "To clarify any doubts you may have about my work or development process.",
   "To make suggestions on how we can improve the project we're working on together.",
-  'Just click on the "contact" button or link in the navigation menu, and you\'ll be redirected.',
+  'Just click on the "get in touch" button or link in the navigation menu, and you\'ll be redirected.',
   "Thank you for visiting, and I look forward to working together!",
 ];
 
@@ -50,24 +50,28 @@ const Home = () => {
           sectionTitle={"Front-End Developer"}
           buttonSpan={"Visit GitHub"}
           textContent={openingParagraphs}
+          route={"https://github.com/glgio7"}
         />
         <Section
           imagePath={"/assets/glgioprofile.jpg"}
           sectionTitle={"About me"}
           buttonSpan={"Visit LinkedIn"}
           textContent={aboutMeParagraphs}
+          route={'https://linkedin.com/in/giovane-lucas/'}
         />
         <Section
           imagePath={"/assets/projects_skills.png"}
           sectionTitle={"Skills and Jobs"}
           buttonSpan={"Visit Projects"}
           textContent={skillsList}
+          route={'/jobs'}
         />
         <Section
           imagePath={"/assets/contact-image.jpg"}
           sectionTitle={"Contact-me"}
-          buttonSpan={"Contact me"}
+          buttonSpan={"Get in touch"}
           textContent={contactMe}
+          route={'/contact'}
         />
         <Footer />
       </Container>
