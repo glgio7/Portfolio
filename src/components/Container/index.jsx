@@ -8,7 +8,7 @@ const Container = ({ children}) => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
-    container.current.scrollTop >= 200 ? setScrolled(true) : setScrolled(false);
+    container.current.scrollTop >= 100 ? setScrolled(true) : setScrolled(false);
   };
   return (
     <StyledContainer ref={container} onScroll={handleScroll}>
