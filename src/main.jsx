@@ -7,12 +7,12 @@ import ContactPage from "./pages/Contact";
 import ProjectsPage from "./pages/Projects";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <GlobalCSS />
-    <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route path="/contact" element={<ContactPage />} />
-      <Route path="/projects" element={<ProjectsPage />} />
-    </Routes>
-  </BrowserRouter>
+	<BrowserRouter>
+		<GlobalCSS />
+		<Routes>
+			<Route exact path="/" element={<Home />} />
+			<Route path="/contact" element={<ContactPage />} />
+			<Route path="/projects" element={<ProjectsPage />} />
+		</Routes>
+	</BrowserRouter>
 );
