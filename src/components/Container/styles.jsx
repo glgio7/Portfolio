@@ -22,7 +22,7 @@ const StyledContainer = styled.main`
 		flex-wrap: wrap;
 		height: 100vh;
 
-		padding-top: calc(2rem + 108px);
+		padding-top: calc(2rem + 64px);
 	}
 `;
 
