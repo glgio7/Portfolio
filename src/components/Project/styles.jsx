@@ -31,15 +31,17 @@ const ProjectContainer = styled.section`
 	.visit-link {
 		background-color: rgba(0, 55, 200, 1);
 		color: #fff;
+
+		margin-top: 0.5rem;
+
 		padding: 0.5rem 0;
 
+		text-align: center;
 		font-weight: bold;
 
 		width: 180px;
 
-		text-align: center;
-
-		border-radius: 0 0 20px 20px;
+		border-radius: 10px;
 	}
 
 	article {
@@ -88,6 +90,15 @@ const ProjectContainer = styled.section`
 			padding: 1.5rem;
 
 			width: 80%;
+		}
+
+		.image-box {
+			width: 60%;
+		}
+
+		.visit-link {
+			margin-top: 1rem;
+			width: 100%;
 		}
 	}
 `;

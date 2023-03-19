@@ -8,7 +8,7 @@ const SectionContainer = styled.section`
 	align-items: center;
 	flex-wrap: wrap;
 
-	padding: 0 2rem;
+	padding: 0 4rem;
 
 	h1 {
 		width: 100%;
@@ -57,9 +57,15 @@ const SectionContainer = styled.section`
 		max-width: 100%;
 
 		color: #fff;
+		background-color: rgb(0, 0, 0, 0.5);
+
+		border-radius: 6px;
+		padding: 1rem;
 	}
 	@media screen and (max-width: 900px) {
 		flex-direction: column;
+
+		padding: 0 2rem;
 
 		text-align: center;
 
@@ -75,6 +81,7 @@ const SectionContainer = styled.section`
 
 		article {
 			width: 100%;
+			padding: 0;
 			margin-bottom: 1rem;
 		}
 	}

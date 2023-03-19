@@ -13,7 +13,7 @@ const ProjectsPage = () => {
 					}
 					link={"https://climaki.vercel.app"}
 					technologies={
-						"React.js, OpenWeather API, SPA, useEffect, useState, useContext, Styled Components & more."
+						"React.js, OpenWeather API, SPA, React Hooks, Styled Components & more."
 					}
 				/>
 				<Project
@@ -24,7 +24,7 @@ const ProjectsPage = () => {
 					}
 					link={"https://jdmnation.vercel.app"}
 					technologies={
-						"React.js, Instagram API, SPA, useEffect, useState, useContext, Styled Components & more."
+						"React.js, Vite.js, MongoDB, Youtube API, SPA, React Hooks, Context API, Styled Components & more."
 					}
 				/>
 				<Project
@@ -35,7 +35,7 @@ const ProjectsPage = () => {
 					}
 					link={"https://dio-githubwiki.vercel.app"}
 					technologies={
-						"React.js, GitHub API, SPA, useEffect, useState, useContext, Styled Components & more."
+						"React.js, GitHub API, SPA, React Hooks, Styled Components & more."
 					}
 				/>
 				<Project
@@ -73,18 +73,7 @@ const ProjectsPage = () => {
 					}
 					link={"https://watchous.netlify.app/"}
 					technologies={
-						"React.js, TMDB API, Youtube API, SPA, useEffect, useState, useContext, Styled Components & more."
-					}
-				/>
-				<Project
-					name={"Magick Hub"}
-					imagePath={"magickhub-logo.png"}
-					description={
-						"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
-					}
-					link={"https://magickhub.vercel.app"}
-					technologies={
-						"React.js, Own JSON API, SPA, useEffect, useState, useContext, Styled Components & more."
+						"React.js, TMDB API, Youtube API, SPA, React Hooks, Styled Components & more."
 					}
 				/>
 				<Project
@@ -97,6 +86,17 @@ const ProjectsPage = () => {
 					technologies={"Vanilla Javascript, HTML, CSS, & more."}
 				/>
 				<Project
+					name={"Magick Hub"}
+					imagePath={"magickhub-logo.png"}
+					description={
+						"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
+					}
+					link={"https://magickhub.vercel.app"}
+					technologies={
+						"React.js, Next.js, API Rest, SPA, React Hooks, Styled Components, AI Art Generator for illustrations & more."
+					}
+				/>
+				<Project
 					name={"Evermind"}
 					imagePath={"evermind-logo.png"}
 					description={
@@ -104,18 +104,18 @@ const ProjectsPage = () => {
 					}
 					link={"https://evermind.vercel.app"}
 					technologies={
-						"React.js, NextJS, SPA, useEffect, useState, useContext, Styled Components & more."
+						"React.js, Next.js, SPA, React Hooks, Context API, ThemeProvider from Styled Components & more."
 					}
 				/>
 				<Project
 					name={"Tasker"}
 					imagePath={"utasker-logo.png"}
 					description={
-						"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
+						"The purpose of this application is to provide a high-quality user experience and user interface, allow separation of notes by category, provide tools for organization and planning, and save data to localStorage so users don't have to register. "
 					}
 					link={"https://utasker.vercel.app"}
 					technologies={
-						"React.js, localStorage, useState, SPA, useEffect, Styled Components & more."
+						"React.js, localStorage, React Router DOM, SPA, React Hooks, Context API, ThemeProvider from Styled Components & more."
 					}
 				/>
 			</Container>

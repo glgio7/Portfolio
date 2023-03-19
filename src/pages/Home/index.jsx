@@ -1,4 +1,3 @@
-import { useRef, useState } from "react";
 import Container from "../../components/Container";
 import Section from "../../components/Section";
 
@@ -20,11 +19,10 @@ const skillsList = [
 	"Currently, I am studying Systems Analysis and Development at UniAmérica and seek to participate in bootcamps at DIO whenever possible. Additionally, I am currently part of a scholarship program at Alura offered by Oracle.",
 ];
 const contactMe = [
-	"If you're interested in my work, there are 3 reasons why you can get in touch with me.",
-	"To discuss a proposal or idea you have in mind that can be executed with my skills.",
-	"To clarify any doubts you may have about my work or development process.",
-	"To make suggestions on how we can improve the project we're working on together.",
-	'Just click on the "get in touch" button or link in the navigation menu, and you\'ll be redirected.',
+	"If you're interested in my work, there are 3 reasons why you can get in touch with me. Just click on the \"get in touch\" button or link in the navigation menu, and you'll be redirected.",
+	"∙To discuss a proposal or idea you have in mind that can be executed with my skills.",
+	"∙To clarify any doubts you may have about my work or development process.",
+	"∙To make suggestions on how we can improve the project we're working on together.",
 	"Thank you for visiting, and I look forward to working together!",
 ];
 
