@@ -82,7 +82,7 @@ const ProjectContainer = styled.section`
 		margin-left: 6px;
 	}
 
-	@media screen and (max-width: 900px) {
+	@media screen and (max-width: 1024px) {
 		flex-direction: column;
 
 		article {

@@ -40,7 +40,7 @@ const FooterContainer = styled.footer`
 		margin-block: 3px;
 	}
 
-	@media screen and (max-width: 900px) {
+	@media screen and (max-width: 1024px) {
 		height: auto;
 		flex-direction: column;
 		align-items: center;

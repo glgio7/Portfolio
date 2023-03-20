@@ -45,6 +45,8 @@ const Form = styled.form`
 
 		border: none;
 		border-radius: 6px 6px 0 0;
+
+		resize: none;
 	}
 
 	.submit-button {

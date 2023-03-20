@@ -5,7 +5,7 @@ const HeaderContainer = styled.header`
 	top: 0;
 
 	height: 48px;
-	width: 100vw;
+	width: 100%;
 
 	display: flex;
 	align-items: center;
@@ -74,7 +74,7 @@ const HeaderContainer = styled.header`
 		}
 	}
 
-	@media screen and (max-width: 900px) {
+	@media screen and (max-width: 1024px) {
 		height: 64px;
 
 		padding: 0 0.75rem;

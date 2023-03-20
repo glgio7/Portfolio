@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalCSS = createGlobalStyle`
 
@@ -25,9 +25,25 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 
-  background: rgb(10,10,10);
-  background: linear-gradient(180deg, rgba(30,30,30) 0%, rgba(100,100,100,1) 100%);
+  position: relative;
+
+  z-index: 5;
+
+  background-color: #101010;
 }
+`;
+
+export const Background = styled.div`
+	position: fixed;
+	top: 0;
+
+	z-index: -1;
+	width: 100vw;
+	height: 100vh;
+
+	background-image: url("/assets/landscape.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 `;
 
 export default GlobalCSS;

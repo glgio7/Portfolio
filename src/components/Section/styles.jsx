@@ -62,7 +62,7 @@ const SectionContainer = styled.section`
 		border-radius: 6px;
 		padding: 1rem;
 	}
-	@media screen and (max-width: 900px) {
+	@media screen and (max-width: 1024px) {
 		flex-direction: column;
 
 		padding: 0 2rem;

@@ -1,10 +1,12 @@
 import Container from "../../components/Container";
+import PageTitle from "../../components/PageTitle";
 import Project from "../../components/Project";
 
 const ProjectsPage = () => {
 	return (
 		<>
 			<Container>
+				<PageTitle text={"Projects - Technologies & Short Description"} />
 				<Project
 					name={"Climaki"}
 					imagePath={"climaki-logo.png"}
