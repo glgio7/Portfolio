@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import HeaderContainer from "./styles";
 import { IoGrid } from "react-icons/io5";
-import { useState } from "react";
+import { useContext } from "react";
+import { NavContext } from "../../contexts/NavContext";
 
 const Header = ({ scrolled }) => {
-	const [nav, setNav] = useState(false);
+	const { nav, setNav } = useContext(NavContext);
 
 	return (
 		<HeaderContainer scrolled={scrolled}>

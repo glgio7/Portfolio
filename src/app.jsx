@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavProvider from "./contexts/NavContext";
 import GlobalCSS, { Background } from "./styles/GlobalCSS";
 import Home from "./pages/Home";
 import ContactPage from "./pages/Contact";
@@ -12,7 +13,9 @@ const App = () => {
 
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll);
-		return () => window.removeEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
 	}, []);
 
 	const handleScroll = () => {
@@ -20,17 +23,19 @@ const App = () => {
 	};
 
 	return (
-		<BrowserRouter>
-			<GlobalCSS />
-			<Background />
-			<Header scrolled={scrolled} />
-			<Routes>
-				<Route exact path="/" element={<Home />} />
-				<Route path="/contact" element={<ContactPage />} />
-				<Route path="/projects" element={<ProjectsPage />} />
-			</Routes>
-			<Footer />
-		</BrowserRouter>
+		<NavProvider>
+			<BrowserRouter>
+				<GlobalCSS />
+				<Background />
+				<Header scrolled={scrolled} />
+				<Routes>
+					<Route exact path="/" element={<Home />} />
+					<Route path="/contact" element={<ContactPage />} />
+					<Route path="/projects" element={<ProjectsPage />} />
+				</Routes>
+				<Footer />
+			</BrowserRouter>
+		</NavProvider>
 	);
 };
 

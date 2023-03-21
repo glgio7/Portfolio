@@ -7,6 +7,8 @@ const Form = styled.form`
 	margin: 0 auto;
 	padding: 1rem;
 
+	margin-top: 1rem;
+
 	width: 80%;
 	background-color: #fff;
 

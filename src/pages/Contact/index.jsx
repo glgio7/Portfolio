@@ -1,4 +1,3 @@
-import Header from "../../components/Header";
 import Container from "../../components/Container";
 import PageTitle from "../../components/PageTitle";
 import Form from "./styles";
@@ -6,7 +5,6 @@ import Form from "./styles";
 const ContactPage = () => {
 	return (
 		<>
-			<Header />
 			<Container>
 				<PageTitle text={"Get in Touch - Form"} />
 				<Form>
