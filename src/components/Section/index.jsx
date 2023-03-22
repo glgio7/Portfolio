@@ -12,15 +12,15 @@ const Section = ({
 		<SectionContainer>
 			<div className="images-box">
 				<img className="images-box__main" src={imagePath} />
-				<button className="images-box__button">
-					{route.startsWith("http") ? (
-						<a href={route} target="_blank">
-							{buttonSpan}
-						</a>
-					) : (
-						<Link to={route}>{buttonSpan}</Link>
-					)}
-				</button>
+				{route.startsWith("http") ? (
+					<a href={route} target="_blank" className="images-box__link">
+						<button>{buttonSpan}</button>
+					</a>
+				) : (
+					<Link to={route} className="images-box__link">
+						<button>{buttonSpan}</button>
+					</Link>
+				)}
 			</div>
 			<article>
 				<h1>{sectionTitle}</h1>

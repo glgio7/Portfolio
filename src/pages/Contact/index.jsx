@@ -4,7 +4,7 @@ import PageTitle from "../../components/PageTitle";
 import Form from "./styles";
 
 const ContactPage = () => {
-	const [state, handleSubmit] = useForm("xayzdbvl");
+	const [state, handleSubmit] = useForm(import.meta.env.VITE_APP_FORMKEY);
 	if (state.succeeded) {
 		window.alert("Thanks for your interest! I'll get in touch soon.");
 		window.location.href = "/";

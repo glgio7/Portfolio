@@ -12,7 +12,7 @@ const Header = ({ scrolled }) => {
 			<Link to={"/"}>
 				<h1>
 					<span>Dev. Giovane Lucas</span>
-					<span>| Portfolio</span>
+					<span>{"<Portfolio/>"}</span>
 				</h1>
 			</Link>
 			<IoGrid className="menu" onClick={() => setNav(!nav)} />

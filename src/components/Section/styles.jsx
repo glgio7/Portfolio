@@ -30,14 +30,19 @@ const SectionContainer = styled.section`
 		border-radius: 50%;
 	}
 
-	.images-box__button {
+	.images-box__link {
 		margin-block: 1rem;
 
 		width: 25%;
-		height: 2rem;
-
-		border: none;
+	}
+	.images-box__link button {
+		transition: all 300ms;
+		cursor: pointer;
 		border-radius: 6px;
+		border: none;
+
+		height: 2rem;
+		width: 100%;
 
 		color: rgba(0, 55, 200, 1);
 
