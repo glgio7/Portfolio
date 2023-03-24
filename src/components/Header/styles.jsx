@@ -29,6 +29,7 @@ const HeaderContainer = styled.header`
 		height: 100%;
 
 		font-size: 1.75rem;
+		/* font-weight: 500; */
 
 		display: flex;
 		align-items: center;

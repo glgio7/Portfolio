@@ -10,7 +10,7 @@ const GlobalCSS = createGlobalStyle`
 
   list-style: none;
 
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 a {

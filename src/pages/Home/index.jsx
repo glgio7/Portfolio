@@ -31,7 +31,7 @@ const Home = () => {
 		<>
 			<Container>
 				<Section
-					imagePath={"/assets/github-logo.png"}
+					imagePath={"/assets/new-logo.png"}
 					sectionTitle={"Front-End Developer"}
 					buttonSpan={"Visit GitHub"}
 					textContent={openingParagraphs}

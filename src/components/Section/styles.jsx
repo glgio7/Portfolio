@@ -80,10 +80,9 @@ const SectionContainer = styled.section`
 			border-radius: 50%;
 		}
 
-		.images-box__button {
-			width: 100%;
+		.images-box__link {
+			width: 80%;
 		}
-
 		article {
 			width: 100%;
 			padding: 0;
