@@ -10,11 +10,11 @@ const ProjectsPage = () => {
 				name={"Climaki"}
 				imagePath={"climaki-logo.png"}
 				description={
-					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
+					"Climaki is a single page application built with React and Typescript. It utilizes the OpenWeather API to provide current, daily, and weekly weather information for any city in the world. It features a minimalist and intuitive design with the purpose of being easy to use and consuming minimal internet data while in use."
 				}
 				link={"https://climaki.vercel.app"}
 				technologies={
-					"React.js, OpenWeather API, SPA, React Hooks, Styled Components & more."
+					"React, Typescript, OpenWeather API, React Hooks, SPA, Styled Components & more."
 				}
 			/>
 			<Project
@@ -84,7 +84,9 @@ const ProjectsPage = () => {
 					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
 				}
 				link={"https://oiching.netlify.app/"}
-				technologies={"Vanilla Javascript, HTML, CSS, & more."}
+				technologies={
+					"React, Vite.js, Typescript, Styled Components, React hooks in addition to a lot of logic to the tokens generator, & more."
+				}
 			/>
 			<Project
 				name={"Magick Hub"}
