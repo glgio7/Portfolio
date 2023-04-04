@@ -21,11 +21,11 @@ const ProjectsPage = () => {
 				name={"JDM Nation"}
 				imagePath={"jdm-nation-logo.png"}
 				description={
-					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
+					"JDM Nation is an Encyclopedia of Japanese cars. It's a fully dynamic application where only database maintenance is required to provide users with new information. Users can access information about cars, and if they're registered on the platform, they can also add cars and their respective information, watch videos, and add items to favorites. The idea is for the application to evolve into a social network dedicated to Japanese car enthusiasts in the future."
 				}
 				link={"https://jdmnation.vercel.app"}
 				technologies={
-					"React.js, Vite.js, MongoDB, Youtube API, SPA, React Hooks, Context API, Styled Components & more."
+					"React, Vite.js, Javascript , Google Firebase, Youtube API, React Hooks, SPA, Context API, Styled Components & more."
 				}
 			/>
 			<Project
