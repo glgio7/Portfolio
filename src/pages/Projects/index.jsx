@@ -32,7 +32,7 @@ const ProjectsPage = () => {
 				name={"GitHub Wiki"}
 				imagePath={"github-wiki-logo.png"}
 				description={
-					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
+					"This project is a simple application that uses the GitHub API to list a user's repositories. It was developed in response to a challenge proposed by the DIO bootcamp platform. Users can remove repositories from the list and access the link to each repository when performing a search."
 				}
 				link={"https://dio-githubwiki.vercel.app"}
 				technologies={

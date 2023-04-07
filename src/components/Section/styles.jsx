@@ -56,6 +56,33 @@ const SectionContainer = styled.section`
 		display: flex;
 		flex-direction: column;
 	}
+
+	.skills-list {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 1rem 0;
+		align-items: center;
+		gap: 6px;
+		/* justify-content: center; */
+	}
+
+	.skills-list li {
+		display: inline-flex;
+		align-items: center;
+		padding: 6px;
+		border-radius: 10px;
+		background-color: #111;
+	}
+
+	.skills-list li img {
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		object-fit: cover;
+		aspect-ratio: 1;
+	}
+
 	p {
 		margin-block: 1rem;
 
@@ -87,6 +114,10 @@ const SectionContainer = styled.section`
 			width: 100%;
 			padding: 0;
 			margin-bottom: 1rem;
+		}
+
+		.skills-list {
+			justify-content: center;
 		}
 	}
 `;

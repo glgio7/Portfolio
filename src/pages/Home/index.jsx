@@ -12,9 +12,8 @@ const aboutMeParagraphs = [
 	"In 2010, when Youtube began to gain popularity in Brazil, I started monetizing some design work for channels. I used tools like Photoshop, After Effects, and Cinema 4D, which gave me knowledge in UI/UX. During this time, I took a technical course in IT and had my first contact with HTML. Years later, encouraged by an uncle for whom I am very grateful, I resumed my studies and became a programmer.",
 	'I have always had a natural ability to observe reality, identify patterns, and make abstractions. Despite innate behavioral tendencies in each person, I believe this skill can be developed by anyone with time, dedication, and the right influences. In addition to being a technology enthusiast, I also have a great interest in psychology. As they say, "we are the average of the people we spend the most time with," and I am grateful for the good influences in my life.',
 ];
-const skillsList = [
-	"Knowledge in: HTML | CSS | SASS | Javascript | React.js + Frameworks | NodeJS",
-	"General knowledge in logic, grammar, orthogonality, abstractions, and pattern recognition set me apart as a professional. Along with these general skills, I possess extensive knowledge in HTML, CSS, Javascript, and especially React.js.",
+const skillsParagraphs = [
+	"General knowledge in logic, grammar, orthogonality, abstractions, and pattern recognition set me apart as a professional. Along with these general skills, I possess extensive knowledge in all technologies in the list above.",
 	"I am most interested in development with React. In my work, I frequently use React Hooks, SPA and WPA concepts, API consumption and creation with JSON, and Styled Components.",
 	"Currently, I am studying Systems Analysis and Development at UniAmérica and seek to participate in bootcamps at DIO whenever possible. Additionally, I am currently part of a scholarship program at Alura offered by Oracle.",
 ];
@@ -48,7 +47,21 @@ const Home = () => {
 					imagePath={"/assets/projects_skills.png"}
 					sectionTitle={"Skills and Projects"}
 					buttonSpan={"Visit Projects"}
-					textContent={skillsList}
+					textContent={skillsParagraphs}
+					skillsList={[
+						"css",
+						"html",
+						"javascript",
+						"typescript",
+						"node",
+						"firebase",
+						"mongodb",
+						"react",
+						"nextjs",
+						"vitejs",
+						"sass",
+						"sc",
+					]}
 					route={"/projects"}
 				/>
 				<Section
