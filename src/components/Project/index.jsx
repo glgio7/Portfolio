@@ -4,7 +4,7 @@ import Button from "../Button";
 const Project = ({ imagePath, name, link, description, technologies }) => {
 	return (
 		<ProjectContainer>
-			<div className="image-box">
+			<div className="image-container">
 				<img src={`/assets/projects/${imagePath}`} />
 			</div>
 			<article>
