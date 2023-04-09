@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import SectionContainer from "./styles";
+import Button from "..//Button";
 
 const Section = ({
+	first,
 	sectionTitle,
 	textContent,
 	imagePath,
@@ -11,18 +13,23 @@ const Section = ({
 }) => {
 	return (
 		<SectionContainer>
-			<div className="images-box">
-				<img className="images-box__main" src={imagePath} />
-				{route.startsWith("http") ? (
-					<a href={route} target="_blank" className="images-box__link">
-						<button>{buttonSpan}</button>
-					</a>
-				) : (
-					<Link to={route} className="images-box__link">
-						<button>{buttonSpan}</button>
-					</Link>
-				)}
-			</div>
+			<article>
+				<div className="images-box">
+					<img
+						src={imagePath}
+						className={first ? "images-box__image logo" : "images-box__image"}
+					/>
+					{route.startsWith("http") ? (
+						<a href={route} target="_blank" className="images-box__link">
+							<Button>{buttonSpan}</Button>
+						</a>
+					) : (
+						<Link to={route} className="images-box__link">
+							<Button>{buttonSpan}</Button>
+						</Link>
+					)}
+				</div>
+			</article>
 			<article>
 				<h1>{sectionTitle}</h1>
 				{skillsList && (
@@ -34,9 +41,9 @@ const Section = ({
 						))}
 					</ul>
 				)}
-				{textContent.map((item, index) => {
-					return <p key={index}>{item}</p>;
-				})}
+				{textContent.map((item) => (
+					<p key={item}>{item}</p>
+				))}
 			</article>
 		</SectionContainer>
 	);

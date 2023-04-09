@@ -2,9 +2,9 @@ import Container from "../../components/Container";
 import Section from "../../components/Section";
 
 const openingParagraphs = [
-	"Passionate about turning ideas into reality, bringing screens to life, and creating unique experiences for users is what motivates me! Combining technical skills and creativity to build amazing interfaces that captivate and surprise.",
+	"Passionate about turning ideas into reality, bringing screens to life, and creating unique experiences for users is what motivates me! Combining technical skills and creativity to build amazing interfaces that truly satisfy.",
+	"All successful projects require professionals from different fields, each in their own specialty, to make it real. That's technology! ",
 	"With the power of coding, I turn designs into living code, building tomorrow's web with every line of code I write.",
-	"All successful projects require professionals from different fields, each in their own specialty, to make it real. That's technology! My dedication and talent allow me to create dynamic websites that impress and inspire.",
 	"Let's unite art, skill, and technique and keep transforming the web experience!",
 ];
 const aboutMeParagraphs = [
@@ -30,7 +30,8 @@ const Home = () => {
 		<>
 			<Container>
 				<Section
-					imagePath={"/assets/new-logo.png"}
+					first={true}
+					imagePath={"/assets/gl-logo.svg"}
 					sectionTitle={"Front-End Developer"}
 					buttonSpan={"Visit GitHub"}
 					textContent={openingParagraphs}

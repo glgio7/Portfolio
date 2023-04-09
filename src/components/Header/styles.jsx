@@ -13,6 +13,8 @@ const HeaderContainer = styled.header`
 
 	padding: 0 2rem;
 
+	z-index: 99;
+
 	background-color: ${({ scrolled }) => (scrolled ? "#fff" : "#101010")};
 
 	transition: all 300ms;
@@ -70,6 +72,7 @@ const HeaderContainer = styled.header`
 		transition: all 300ms;
 
 		&:hover {
+			color: ${({ scrolled }) => (scrolled ? "#00c6ff" : "#9900ff")};
 			opacity: 0.75;
 		}
 	}
