@@ -40,6 +40,10 @@ const FooterContainer = styled.footer`
 		margin-block: 3px;
 	}
 
+	h3:last-child {
+		color: #00c6ff;
+	}
+
 	@media screen and (max-width: 1024px) {
 		height: auto;
 		flex-direction: column;

@@ -14,7 +14,7 @@ const aboutMeParagraphs = [
 ];
 const skillsParagraphs = [
 	"General knowledge in logic, grammar, orthogonality, abstractions, and pattern recognition set me apart as a professional. Along with these general skills, I possess extensive knowledge in all technologies in the list above.",
-	"I am most interested in development with React. In my work, I frequently use React Hooks, SPA and WPA concepts, API consumption and creation with JSON, and Styled Components.",
+	"I am most interested in development with React and Typescript. In my work, I frequently use React Hooks, Styled Components, SPA and WPA concepts, API consumption and creation with Node.js.",
 	"Currently, I am studying Systems Analysis and Development at UniAmérica and seek to participate in bootcamps at DIO whenever possible. Additionally, I am currently part of a scholarship program at Alura offered by Oracle.",
 ];
 const contactMe = [

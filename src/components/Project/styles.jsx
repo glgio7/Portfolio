@@ -15,20 +15,28 @@ const ProjectContainer = styled.section`
 	}
 
 	.image-container {
-		width: 15%;
+		width: 30%;
 		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+
+		border-radius: 20px;
+
+		background-color: #222;
 	}
 
 	.image-container img {
 		width: 100%;
-		aspect-ratio: 1;
+
+		aspect-ratio: 16/9;
 		object-fit: cover;
 
-		border-radius: 20px 20px 0 0;
+		border-radius: 20px;
 	}
 
 	article {
-		width: 75%;
+		width: 60%;
 		height: 100%;
 
 		display: flex;
@@ -49,6 +57,18 @@ const ProjectContainer = styled.section`
 		font-size: 1.25rem;
 		color: rgb(0, 140, 255);
 		line-height: 1.5rem;
+	}
+
+	h1 {
+		display: inline-flex;
+		align-items: flex-end;
+	}
+
+	.icon {
+		width: 1.75rem;
+		height: 1.75rem;
+
+		margin-right: 0.5rem;
 	}
 
 	p,
@@ -102,16 +122,14 @@ const ProjectContainer = styled.section`
 			padding: 1.5rem;
 			padding-bottom: 0;
 
-			width: 80%;
+			width: 90%;
 		}
 
 		.image-container {
-			width: 80%;
-			border-radius: 0px;
+			width: 90%;
 		}
 
 		.image-container img {
-			border-radius: 0px;
 			width: 100%;
 			aspect-ratio: 16/9;
 		}

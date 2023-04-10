@@ -8,7 +8,8 @@ const ProjectsPage = () => {
 			<PageTitle text={"Projects - Technologies & Short Description"} />
 			<Project
 				name={"Climaki"}
-				imagePath={"climaki-logo.png"}
+				screenshot={"screenshot-climaki.png"}
+				iconPath={"climaki-logo.png"}
 				description={
 					"Climaki is a single page application built with React and Typescript. It utilizes the OpenWeather API to provide current, daily, and weekly weather information for any city in the world. It features a minimalist and intuitive design with the purpose of being easy to use and consuming minimal internet data while in use."
 				}
@@ -19,7 +20,8 @@ const ProjectsPage = () => {
 			/>
 			<Project
 				name={"JDM Nation"}
-				imagePath={"jdm-nation-logo.png"}
+				screenshot={"screenshot-jdm-nation.png"}
+				iconPath={"jdm-nation-logo.png"}
 				description={
 					"JDM Nation is an Encyclopedia of Japanese cars. It's a fully dynamic application where only database maintenance is required to provide users with new information. Users can access information about cars, and if they're registered on the platform, they can also add cars and their respective information, watch videos, and add items to favorites. The idea is for the application to evolve into a social network dedicated to Japanese car enthusiasts in the future."
 				}
@@ -30,7 +32,8 @@ const ProjectsPage = () => {
 			/>
 			<Project
 				name={"GitHub Wiki"}
-				imagePath={"github-wiki-logo.png"}
+				screenshot={"screenshot-github-wiki.png"}
+				iconPath={"github-wiki-logo.png"}
 				description={
 					"This project is a simple application that uses the GitHub API to list a user's repositories. It was developed in response to a challenge proposed by the DIO bootcamp platform. Users can remove repositories from the list and access the link to each repository when performing a search."
 				}
@@ -41,7 +44,8 @@ const ProjectsPage = () => {
 			/>
 			<Project
 				name={"Central Sight Alura"}
-				imagePath={"centralsight-logo.png"}
+				screenshot={"screenshot-centralsight.png"}
+				iconPath={"centralsight-logo.png"}
 				description={
 					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
 				}
@@ -50,7 +54,8 @@ const ProjectsPage = () => {
 			/>
 			<Project
 				name={"Calculadora DIO"}
-				imagePath={"calc-dio-logo.png"}
+				screenshot={"screenshot-calc-dio.png"}
+				iconPath={"calc-dio-logo.png"}
 				description={
 					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
 				}
@@ -59,7 +64,8 @@ const ProjectsPage = () => {
 			/>
 			<Project
 				name={"Decoder Oracle"}
-				imagePath={"decoder-logo.png"}
+				screenshot={"screenshot-decoder.png"}
+				iconPath={"decoder-logo.png"}
 				description={
 					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
 				}
@@ -68,7 +74,8 @@ const ProjectsPage = () => {
 			/>
 			<Project
 				name={"Watchous"}
-				imagePath={"watchous-logo.png"}
+				screenshot={"screenshot-watchous.png"}
+				iconPath={"watchous-logo.png"}
 				description={
 					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
 				}
@@ -79,7 +86,8 @@ const ProjectsPage = () => {
 			/>
 			<Project
 				name={"Iching Online"}
-				imagePath={"iching-logo.png"}
+				screenshot={"screenshot-iching.png"}
+				iconPath={"iching-logo.png"}
 				description={
 					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
 				}
@@ -90,7 +98,8 @@ const ProjectsPage = () => {
 			/>
 			<Project
 				name={"Magick Hub"}
-				imagePath={"magickhub-logo.png"}
+				screenshot={"screenshot-magickhub.png"}
+				iconPath={"magickhub-logo.png"}
 				description={
 					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
 				}
@@ -101,7 +110,8 @@ const ProjectsPage = () => {
 			/>
 			<Project
 				name={"Evermind"}
-				imagePath={"evermind-logo.png"}
+				screenshot={"screenshot-evermind.png"}
+				iconPath={"evermind-logo.png"}
 				description={
 					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
 				}
@@ -112,7 +122,8 @@ const ProjectsPage = () => {
 			/>
 			<Project
 				name={"Tasker"}
-				imagePath={"utasker-logo.png"}
+				screenshot={"screenshot-utasker.png"}
+				iconPath={"utasker-logo.png"}
 				description={
 					"The purpose of this application is to provide a high-quality user experience and user interface, allow separation of notes by category, provide tools for organization and planning, and save data to localStorage so users don't have to register. "
 				}

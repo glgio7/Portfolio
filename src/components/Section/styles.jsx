@@ -138,10 +138,16 @@ const SectionContainer = styled.section`
 		.images-box__link {
 			width: 80%;
 		}
+
 		article {
 			width: 100%;
 			padding: 0;
 			margin-bottom: 1rem;
+		}
+
+		p {
+			padding: 0;
+			margin-block: 0.5rem;
 		}
 
 		.skills-list {

@@ -1,14 +1,24 @@
 import ProjectContainer from "./styles";
 import Button from "../Button";
 
-const Project = ({ imagePath, name, link, description, technologies }) => {
+const Project = ({
+	screenshot,
+	iconPath,
+	name,
+	link,
+	description,
+	technologies,
+}) => {
 	return (
 		<ProjectContainer>
 			<div className="image-container">
-				<img src={`/assets/projects/${imagePath}`} />
+				<img src={`/assets/screenshots/${screenshot}`} />
 			</div>
 			<article>
-				<h1>{name}</h1>
+				<h1>
+					<img src={`/assets/projects/${iconPath}`} className="icon" />
+					{name}
+				</h1>
 				<p>{description}</p>
 				<h2>
 					Technologies:<span>{technologies}</span>

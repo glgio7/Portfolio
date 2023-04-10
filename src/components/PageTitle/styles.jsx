@@ -29,7 +29,6 @@ export const StyledTitle = styled.h1`
 		background-color: #000;
 		color: #fff;
 
-		/* padding: 1rem 0; */
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
