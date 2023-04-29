@@ -7,6 +7,7 @@ import ProjectsPage from "./pages/Projects";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
+import {} from "./app"
 
 const App = () => {
 	const [scrolled, setScrolled] = useState(false);
