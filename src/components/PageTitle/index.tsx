@@ -1,6 +1,11 @@
 import { StyledTitle } from "./styles";
+import React from "react";
 
-const PageTitle = ({ text }) => {
+type PageTitleProps = {
+	text: string;
+};
+
+const PageTitle = ({ text }: PageTitleProps) => {
 	return (
 		<StyledTitle>
 			<span>{text}</span>
