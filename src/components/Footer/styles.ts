@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const FooterContainer = styled.footer`
+export const Footer = styled.footer`
 	width: 100vw;
 	height: 160px;
 	display: flex;
@@ -71,5 +71,3 @@ const FooterContainer = styled.footer`
 		}
 	}
 `;
-
-export default FooterContainer;

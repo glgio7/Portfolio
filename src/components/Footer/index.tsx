@@ -1,9 +1,9 @@
-import FooterContainer from "./styles";
+import * as S from "./styles";
 import React from "react";
 
 const Footer = () => {
 	return (
-		<FooterContainer>
+		<S.Footer>
 			<div className="container__image"></div>
 			<div className="container__description">
 				<h3>Full Stack Developer | Front-End Development specialist.</h3>
@@ -13,7 +13,7 @@ const Footer = () => {
 				</h3>
 				<h3>All rights reserved ©</h3>
 			</div>
-		</FooterContainer>
+		</S.Footer>
 	);
 };
 

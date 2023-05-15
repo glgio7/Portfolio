@@ -1,6 +1,17 @@
+import * as S from "./styles";
+import React from "react";
 import { Link } from "react-router-dom";
-import SectionContainer from "./styles";
-import Button from "..//Button";
+import Button from "../Button";
+
+type SectionProps = {
+	first?: boolean;
+	sectionTitle: string;
+	textContent: string[];
+	imagePath: string;
+	buttonSpan: string;
+	route: string;
+	skillsList?: string[];
+};
 
 const Section = ({
 	first,
@@ -10,9 +21,9 @@ const Section = ({
 	buttonSpan,
 	route,
 	skillsList,
-}) => {
+}: SectionProps) => {
 	return (
-		<SectionContainer>
+		<S.Section>
 			<article>
 				<div className="images-box">
 					<img
@@ -45,7 +56,7 @@ const Section = ({
 					<p key={item}>{item}</p>
 				))}
 			</article>
-		</SectionContainer>
+		</S.Section>
 	);
 };
 

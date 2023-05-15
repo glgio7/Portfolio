@@ -1,8 +1,13 @@
+import React from "react";
 import { useContext, useEffect } from "react";
 import { NavContext } from "../../contexts/NavContext";
-import StyledContainer from "./styles";
+import * as S from "./styles";
 
-const Container = ({ children }) => {
+type ContainerProps = {
+	children: React.ReactNode;
+};
+
+const Container = ({ children }: ContainerProps) => {
 	const { setNav } = useContext(NavContext);
 	useEffect(() => {
 		window.scrollTo({
@@ -12,7 +17,7 @@ const Container = ({ children }) => {
 		setNav(false);
 	}, []);
 
-	return <StyledContainer>{children}</StyledContainer>;
+	return <S.Container>{children}</S.Container>;
 };
 
 export default Container;

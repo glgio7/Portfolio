@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledContainer = styled.main`
+export const Container = styled.main`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -14,5 +14,3 @@ const StyledContainer = styled.main`
 		flex-wrap: wrap;
 	}
 `;
-
-export default StyledContainer;

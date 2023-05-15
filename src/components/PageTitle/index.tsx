@@ -1,4 +1,4 @@
-import { StyledTitle } from "./styles";
+import * as S from "./styles";
 import React from "react";
 
 type PageTitleProps = {
@@ -7,9 +7,9 @@ type PageTitleProps = {
 
 const PageTitle = ({ text }: PageTitleProps) => {
 	return (
-		<StyledTitle>
+		<S.PageTitle>
 			<span>{text}</span>
-		</StyledTitle>
+		</S.PageTitle>
 	);
 };
 

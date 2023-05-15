@@ -1,5 +1,15 @@
-import ProjectContainer from "./styles";
+import * as S from "./styles";
+import React from "react";
 import Button from "../Button";
+
+type ProjectProps = {
+	screenshot: string;
+	iconPath: string;
+	name: string;
+	link: string;
+	description: string;
+	technologies: string;
+};
 
 const Project = ({
 	screenshot,
@@ -8,9 +18,9 @@ const Project = ({
 	link,
 	description,
 	technologies,
-}) => {
+}: ProjectProps) => {
 	return (
-		<ProjectContainer>
+		<S.ProjectContainer>
 			<div className="image-container">
 				<img src={`/assets/screenshots/${screenshot}`} />
 			</div>
@@ -27,7 +37,7 @@ const Project = ({
 					<Button>Visit</Button>
 				</a>
 			</article>
-		</ProjectContainer>
+		</S.ProjectContainer>
 	);
 };
 

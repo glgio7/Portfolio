@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProjectContainer = styled.section`
+export const ProjectContainer = styled.section`
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -140,5 +140,3 @@ const ProjectContainer = styled.section`
 		}
 	}
 `;
-
-export default ProjectContainer;

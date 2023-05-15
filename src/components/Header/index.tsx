@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom";
-import HeaderContainer from "./styles";
-import { IoGrid } from "react-icons/io5";
+import React from "react";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
+import * as S from "./styles";
+import { IoGrid } from "react-icons/io5";
 import { NavContext } from "../../contexts/NavContext";
 
-const Header = ({ scrolled }) => {
+type HeaderProps = {
+	scrolled: boolean;
+};
+
+const Header = ({ scrolled }: HeaderProps) => {
 	const { nav, setNav } = useContext(NavContext);
 
 	return (
-		<HeaderContainer scrolled={scrolled}>
+		<S.Header scrolled={scrolled}>
 			<Link to={"/"}>
 				<h1>
 					<span>Dev. Giovane Lucas</span>
@@ -30,7 +35,7 @@ const Header = ({ scrolled }) => {
 					<li className="lista-navegacao__item">Contact</li>
 				</Link>
 			</ul>
-		</HeaderContainer>
+		</S.Header>
 	);
 };
 

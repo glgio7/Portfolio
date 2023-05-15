@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledTitle = styled.h1`
+export const PageTitle = styled.h1`
 	width: 80%;
 	height: 54px;
 

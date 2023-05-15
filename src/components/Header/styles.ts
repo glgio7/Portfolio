@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const HeaderContainer = styled.header`
+export const Header = styled.header<{ scrolled: boolean }>`
 	position: fixed;
 	top: 0;
 
@@ -130,5 +130,3 @@ const HeaderContainer = styled.header`
 		}
 	}
 `;
-
-export default HeaderContainer;
