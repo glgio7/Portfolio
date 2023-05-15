@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavProvider from "./contexts/NavContext";
 import GlobalCSS, { Background } from "./styles/GlobalCSS";
@@ -6,8 +7,6 @@ import ContactPage from "./pages/Contact";
 import ProjectsPage from "./pages/Projects";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { useEffect, useState } from "react";
-import {} from "./app"
 
 const App = () => {
 	const [scrolled, setScrolled] = useState(false);
@@ -30,7 +29,7 @@ const App = () => {
 				<Background />
 				<Header scrolled={scrolled} />
 				<Routes>
-					<Route exact path="/" element={<Home />} />
+					<Route path="/" element={<Home />} />
 					<Route path="/contact" element={<ContactPage />} />
 					<Route path="/projects" element={<ProjectsPage />} />
 				</Routes>
