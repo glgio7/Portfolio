@@ -1,7 +1,7 @@
-import React from "react";
+import * as S from "./styles";
 import { useContext, useEffect } from "react";
 import { NavContext } from "../../contexts/NavContext";
-import * as S from "./styles";
+import { useLocation } from "react-router-dom";
 
 type ContainerProps = {
 	children: React.ReactNode;
@@ -9,13 +9,15 @@ type ContainerProps = {
 
 const Container = ({ children }: ContainerProps) => {
 	const { setNav } = useContext(NavContext);
+	const { pathname } = useLocation();
+
 	useEffect(() => {
 		window.scrollTo({
 			top: 0,
 			behavior: "smooth",
 		});
 		setNav(false);
-	}, []);
+	}, [pathname]);
 
 	return <S.Container>{children}</S.Container>;
 };

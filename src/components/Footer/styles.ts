@@ -8,7 +8,6 @@ export const Footer = styled.footer`
 	background-color: #101010;
 
 	padding: 2rem;
-	/* margin-top: 3rem; */
 
 	.container__image {
 		width: 45%;

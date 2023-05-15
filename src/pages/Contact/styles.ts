@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Form = styled.form`
+export const Form = styled.form`
 	display: flex;
 	flex-direction: column;
 
@@ -52,7 +52,7 @@ const Form = styled.form`
 		resize: none;
 	}
 
-	.submit-button {
+	input[type="submit"] {
 		cursor: pointer;
 
 		border: none;
@@ -73,5 +73,3 @@ const Form = styled.form`
 		}
 	}
 `;
-
-export default Form;

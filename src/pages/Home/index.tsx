@@ -1,5 +1,3 @@
-import React from "react";
-import Container from "../../components/Container";
 import Section from "../../components/Section";
 
 const openingParagraphs = [
@@ -29,51 +27,49 @@ const contactMe = [
 const Home = () => {
 	return (
 		<>
-			<Container>
-				<Section
-					first={true}
-					imagePath={"/assets/gl-logo.svg"}
-					sectionTitle={"Front-End Developer"}
-					buttonSpan={"Visit GitHub"}
-					textContent={openingParagraphs}
-					route={"https://github.com/glgio7"}
-				/>
-				<Section
-					imagePath={"/assets/glgioprofile.jpg"}
-					sectionTitle={"About me"}
-					buttonSpan={"Visit LinkedIn"}
-					textContent={aboutMeParagraphs}
-					route={"https://linkedin.com/in/giovane-lucas/"}
-				/>
-				<Section
-					imagePath={"/assets/projects_skills.png"}
-					sectionTitle={"Skills and Projects"}
-					buttonSpan={"Visit Projects"}
-					textContent={skillsParagraphs}
-					skillsList={[
-						"css",
-						"html",
-						"javascript",
-						"typescript",
-						"node",
-						"firebase",
-						"mongodb",
-						"react",
-						"nextjs",
-						"vitejs",
-						"sass",
-						"sc",
-					]}
-					route={"/projects"}
-				/>
-				<Section
-					imagePath={"/assets/contact-image.jpg"}
-					sectionTitle={"Contact-me"}
-					buttonSpan={"Get in touch"}
-					textContent={contactMe}
-					route={"/contact"}
-				/>
-			</Container>
+			<Section
+				first={true}
+				imagePath={"/assets/gl-logo.svg"}
+				sectionTitle={"Full-stack Developer"}
+				buttonSpan={"Visit GitHub"}
+				textContent={openingParagraphs}
+				route={"https://github.com/glgio7"}
+			/>
+			<Section
+				imagePath={"/assets/glgioprofile.jpg"}
+				sectionTitle={"About me"}
+				buttonSpan={"Visit LinkedIn"}
+				textContent={aboutMeParagraphs}
+				route={"https://linkedin.com/in/giovane-lucas/"}
+			/>
+			<Section
+				imagePath={"/assets/projects_skills.png"}
+				sectionTitle={"Skills and Projects"}
+				buttonSpan={"Visit Projects"}
+				textContent={skillsParagraphs}
+				skillsList={[
+					"css",
+					"html",
+					"javascript",
+					"typescript",
+					"node",
+					"firebase",
+					"mongodb",
+					"react",
+					"nextjs",
+					"vitejs",
+					"sass",
+					"sc",
+				]}
+				route={"/projects"}
+			/>
+			<Section
+				imagePath={"/assets/contact-image.jpg"}
+				sectionTitle={"Contact-me"}
+				buttonSpan={"Get in touch"}
+				textContent={contactMe}
+				route={"/contact"}
+			/>
 		</>
 	);
 };

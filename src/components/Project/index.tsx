@@ -1,5 +1,4 @@
 import * as S from "./styles";
-import React from "react";
 import Button from "../Button";
 
 type ProjectProps = {

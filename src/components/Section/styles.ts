@@ -27,7 +27,7 @@ export const Section = styled.section`
 		width: 360px;
 		object-fit: contain;
 
-		border-radius: 50%;
+		border-radius: 0 50% 0 50%;
 	}
 
 	.images-box__image.logo {

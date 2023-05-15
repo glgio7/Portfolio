@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header<{ scrolled: boolean }>`
-	position: fixed;
+	position: sticky;
 	top: 0;
 
 	height: 48px;

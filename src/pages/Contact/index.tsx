@@ -1,19 +1,20 @@
 import { useForm, ValidationError } from "@formspree/react";
-import Container from "../../components/Container";
+import { useNavigate } from "react-router-dom";
 import PageTitle from "../../components/PageTitle";
-import Form from "./styles";
+import * as S from "./styles";
 
 const ContactPage = () => {
+	const navigate = useNavigate();
 	const [state, handleSubmit] = useForm(import.meta.env.VITE_APP_FORMKEY);
 	if (state.succeeded) {
 		window.alert("Thanks for your interest! I'll get in touch soon.");
-		window.location.href = "/";
+		navigate("/");
 	}
 
 	return (
-		<Container>
+		<>
 			<PageTitle text={"Get in Touch - Form"} />
-			<Form onSubmit={handleSubmit}>
+			<S.Form onSubmit={handleSubmit}>
 				<label htmlFor="name">Name</label>
 				<input type="text" id="name" name="name" required />
 				<ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -30,14 +31,9 @@ const ContactPage = () => {
 					errors={state.errors}
 				/>
 
-				<input
-					disabled={state.submitting}
-					className="submit-button"
-					type="submit"
-					value="Enviar"
-				/>
-			</Form>
-		</Container>
+				<input disabled={state.submitting} type="submit" value="Send form" />
+			</S.Form>
+		</>
 	);
 };
 

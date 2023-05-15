@@ -1,11 +1,9 @@
-import React from "react";
-import Container from "../../components/Container";
 import PageTitle from "../../components/PageTitle";
 import Project from "../../components/Project";
 
 const ProjectsPage = () => {
 	return (
-		<Container>
+		<>
 			<PageTitle text={"Projects - Technologies & Short Description"} />
 			<Project
 				name={"Climaki"}
@@ -133,7 +131,7 @@ const ProjectsPage = () => {
 					"React.js, localStorage, React Router DOM, SPA, React Hooks, Context API, ThemeProvider from Styled Components & more."
 				}
 			/>
-		</Container>
+		</>
 	);
 };
 

@@ -1,7 +1,6 @@
-import React from "react";
+import * as S from "./styles";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import * as S from "./styles";
 import { IoGrid } from "react-icons/io5";
 import { NavContext } from "../../contexts/NavContext";
 

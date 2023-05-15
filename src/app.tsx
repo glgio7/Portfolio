@@ -7,9 +7,14 @@ import ContactPage from "./pages/Contact";
 import ProjectsPage from "./pages/Projects";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Container from "./components/Container";
 
 const App = () => {
 	const [scrolled, setScrolled] = useState(false);
+
+	const handleScroll = () => {
+		window.scrollY >= 100 ? setScrolled(true) : setScrolled(false);
+	};
 
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll);
@@ -17,10 +22,9 @@ const App = () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
-
-	const handleScroll = () => {
-		window.scrollY >= 100 ? setScrolled(true) : setScrolled(false);
-	};
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [Route]);
 
 	return (
 		<NavProvider>
@@ -28,11 +32,13 @@ const App = () => {
 				<GlobalCSS />
 				<Background />
 				<Header scrolled={scrolled} />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/contact" element={<ContactPage />} />
-					<Route path="/projects" element={<ProjectsPage />} />
-				</Routes>
+				<Container>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/contact" element={<ContactPage />} />
+						<Route path="/projects" element={<ProjectsPage />} />
+					</Routes>
+				</Container>
 				<Footer />
 			</BrowserRouter>
 		</NavProvider>
