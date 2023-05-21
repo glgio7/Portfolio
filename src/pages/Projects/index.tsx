@@ -30,6 +30,18 @@ const ProjectsPage = () => {
 				}
 			/>
 			<Project
+				name={"Watchous"}
+				screenshot={"screenshot-watchous.png"}
+				iconPath={"watchous-logo.png"}
+				description={
+					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
+				}
+				link={"https://watchous.vercel.app/"}
+				technologies={
+					"Typescript PWA. Front-end: React + Vite, TMDB API, Custom Hooks, Styled Components & more. Back-end: TS-Node-dev, Cors, Express, MongoDB, Bcrypt, JWT."
+				}
+			/>
+			<Project
 				name={"GitHub Wiki"}
 				screenshot={"screenshot-github-wiki.png"}
 				iconPath={"github-wiki-logo.png"}
@@ -70,18 +82,6 @@ const ProjectsPage = () => {
 				}
 				link={"https://glgio7.github.io/ChallengeOne-Decodificador/"}
 				technologies={"Vanilla Javascript, HTML, CSS, & more."}
-			/>
-			<Project
-				name={"Watchous"}
-				screenshot={"screenshot-watchous.png"}
-				iconPath={"watchous-logo.png"}
-				description={
-					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
-				}
-				link={"https://watchous.netlify.app/"}
-				technologies={
-					"React.js, TMDB API, Youtube API, SPA, React Hooks, Styled Components & more."
-				}
 			/>
 			<Project
 				name={"Iching Online"}
