@@ -34,11 +34,11 @@ const ProjectsPage = () => {
 				screenshot={"screenshot-watchous.png"}
 				iconPath={"watchous-logo.png"}
 				description={
-					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
+					"Watchous is a movie trailer and review portal built with React+TypeScript and designed to provides up-to-date information on movies. The users can signup, favorite movies, and customize their profiles, and movies playlists. It utilizes various technologies on both the front-end and back-end. With integration to the TMDB API, I found a way to get all the front end data using some params, therefore it's not necessary to upload any file to our database, making the use of file upload libraries unnecessary."
 				}
 				link={"https://watchous.vercel.app/"}
 				technologies={
-					"Typescript PWA. Front-end: React + Vite, TMDB API, Custom Hooks, Styled Components & more. Back-end: TS-Node-dev, Cors, Express, MongoDB, Bcrypt, JWT."
+					"Typescript PWA. Front-end: React + Vite, TMDB API, Axios, Custom Hooks, Styled Components & more. Back-end: TS-Node-dev, Cors, Express, MongoDB, Bcrypt, JWT."
 				}
 			/>
 			<Project
