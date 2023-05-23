@@ -10,20 +10,12 @@ export const ProjectContainer = styled.section`
 
 	margin-block: 2rem;
 
-	img {
-		width: 100%;
-	}
-
 	.image-container {
 		width: 30%;
 		height: 100%;
 
 		display: flex;
 		flex-direction: column;
-
-		border-radius: 20px;
-
-		background-color: #222;
 	}
 
 	.image-container img {
@@ -31,8 +23,8 @@ export const ProjectContainer = styled.section`
 
 		aspect-ratio: 16/9;
 		object-fit: cover;
-
-		border-radius: 20px;
+		border-radius: 0 25% 0 50%;
+		box-shadow: rgba(99, 0, 255, 0.25) -10px 0px 15px;
 	}
 
 	article {
@@ -52,23 +44,23 @@ export const ProjectContainer = styled.section`
 		padding-bottom: 0;
 	}
 
+	.icon {
+		width: 1.75rem;
+		height: 1.75rem;
+
+		margin-right: 0.5rem;
+	}
+
 	h1,
 	h2 {
 		font-size: 1.25rem;
-		color: rgb(0, 140, 255);
+		color: #0090ff;
 		line-height: 1.5rem;
 	}
 
 	h1 {
 		display: inline-flex;
 		align-items: flex-end;
-	}
-
-	.icon {
-		width: 1.75rem;
-		height: 1.75rem;
-
-		margin-right: 0.5rem;
 	}
 
 	p,
