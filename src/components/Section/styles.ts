@@ -11,32 +11,36 @@ export const Section = styled.section`
 
 	h1 {
 		width: 100%;
-		font-size: 2.25rem;
+		font-size: 2.5rem;
 		color: #fff;
+		&::first-letter {
+			color: #00c6ff;
+		}
 	}
 
-	.images-box {
-		width: 100%;
+	article {
+		width: 50%;
 
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		align-items: center;
 	}
 
-	.images-box__image {
+	.image-box__image {
 		width: 360px;
 		object-fit: contain;
 
 		border-radius: 0 50% 0 50%;
 	}
 
-	.images-box__image.logo {
+	.image-box__image.logo {
 		border-radius: 0px;
 		object-fit: cover;
 		aspect-ratio: 16/9;
 	}
 
-	.images-box__link {
+	.image-box__link {
 		margin-block: 1rem;
 
 		width: 360px;
@@ -63,7 +67,7 @@ export const Section = styled.section`
 		}
 	}
 
-	.images-box__link button {
+	.image-box__link button {
 		transition: all 300ms;
 		cursor: pointer;
 
@@ -76,14 +80,6 @@ export const Section = styled.section`
 
 		font-size: 1rem;
 		font-weight: bold;
-	}
-
-	article {
-		width: 50%;
-
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
 	}
 
 	.skills-list {
@@ -112,13 +108,10 @@ export const Section = styled.section`
 	}
 
 	p {
-		max-width: 100%;
-
+		width: 100%;
 		color: #fff;
 
-		border-radius: 6px;
-		padding: 1rem;
-		padding-left: 0;
+		padding-block: 1rem;
 
 		font-size: 1.2rem;
 	}
@@ -129,13 +122,11 @@ export const Section = styled.section`
 
 		text-align: center;
 
-		.images-box__image {
+		.image-box__image {
 			width: 256px;
-
-			border-radius: 50%;
 		}
 
-		.images-box__link {
+		.image-box__link {
 			width: 80%;
 		}
 

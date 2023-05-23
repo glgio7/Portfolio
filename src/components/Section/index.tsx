@@ -24,21 +24,19 @@ const Section = ({
 	return (
 		<S.Section>
 			<article>
-				<div className="images-box">
-					<img
-						src={imagePath}
-						className={first ? "images-box__image logo" : "images-box__image"}
-					/>
-					{route.startsWith("http") ? (
-						<a href={route} target="_blank" className="images-box__link">
-							<Button>{buttonSpan}</Button>
-						</a>
-					) : (
-						<Link to={route} className="images-box__link">
-							<Button>{buttonSpan}</Button>
-						</Link>
-					)}
-				</div>
+				<img
+					src={imagePath}
+					className={first ? "image-box__image logo" : "image-box__image"}
+				/>
+				{route.startsWith("http") ? (
+					<a href={route} target="_blank" className="image-box__link">
+						<Button>{buttonSpan}</Button>
+					</a>
+				) : (
+					<Link to={route} className="image-box__link">
+						<Button>{buttonSpan}</Button>
+					</Link>
+				)}
 			</article>
 			<article>
 				<h1>{sectionTitle}</h1>
