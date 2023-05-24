@@ -1,10 +1,9 @@
 import Section from "../../components/Section";
 
 const openingParagraphs = [
-	"Passionate about turning ideas into reality, bringing screens to life, and creating unique experiences for users is what motivates me! Combining technical skills and creativity to build amazing interfaces that truly satisfy.",
-	"All successful projects require professionals from different fields, each in their own specialty, to make it real. That's technology! ",
-	"With the power of coding, I turn designs into living code, building tomorrow's web with every line of code I write.",
-	"Let's unite art, skill, and technique and keep transforming the web experience!",
+	"Turning ideas into reality, bringing screens to life, and creating the best experiences for users and clients is what motivates me! Combining technical skills, and creativity to build amazing integrated software interfaces that truly satisfy.",
+	"All successful projects require expert professionals from different fields. I am the one who can help you to improve your project, due to my full stack knowledge and overall sight.",
+	"Flexibility, cost savings and easy communication is what I offer you. Let's make it happen and keep transforming the web experience!",
 ];
 const aboutMeParagraphs = [
 	"Currently at 26 years old, my first contact with a computer was through games, over 20 years ago. I have always been very curious and games fascinated me, especially when they had interesting stories. So, I quickly developed a huge interest in learning and along with it, skills in conducting research.",
