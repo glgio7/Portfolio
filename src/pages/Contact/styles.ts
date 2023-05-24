@@ -73,3 +73,40 @@ export const Form = styled.form`
 		}
 	}
 `;
+
+export const FormLoader = styled.div`
+	height: 3rem;
+
+	justify-content: center;
+	display: flex;
+	align-items: center;
+
+	background-color: #000;
+	transition: all 300ms;
+
+	.spinner {
+		background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(0, 225, 255));
+		width: 2rem;
+		height: 2rem;
+		animation: spinningLoading 1.7s linear infinite;
+		text-align: center;
+		border-radius: 50px;
+		filter: blur(1px);
+		box-shadow: 0px 0px 3px 0px rgb(186, 66, 255),
+			0px 0px 3px 0px rgb(0, 225, 255);
+	}
+
+	.spinner1 {
+		background-color: rgb(0, 80, 255);
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		filter: blur(10px);
+	}
+
+	@keyframes spinningLoading {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+`;

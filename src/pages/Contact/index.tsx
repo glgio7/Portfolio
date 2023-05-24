@@ -14,6 +14,7 @@ const ContactPage = () => {
 	return (
 		<>
 			<PageTitle text={"Get in Touch - Form"} />
+
 			<S.Form onSubmit={handleSubmit}>
 				<label htmlFor="name">Name</label>
 				<input type="text" id="name" name="name" required />
@@ -30,8 +31,16 @@ const ContactPage = () => {
 					field="message"
 					errors={state.errors}
 				/>
-
-				<input disabled={state.submitting} type="submit" value="Send form" />
+				{!state.submitting && (
+					<input disabled={state.submitting} type="submit" value="Send form" />
+				)}
+				{state.submitting && (
+					<S.FormLoader>
+						<div className="spinner">
+							<div className="spinner1"></div>
+						</div>
+					</S.FormLoader>
+				)}
 			</S.Form>
 		</>
 	);
