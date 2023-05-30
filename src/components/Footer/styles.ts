@@ -7,28 +7,21 @@ export const Footer = styled.footer`
 
 	background-color: #101010;
 
+	display: flex;
+	justify-content: center;
+
 	padding: 2rem;
 
-	.container__image {
-		width: 45%;
-		background-image: url("/assets/cyberpunk-banner.png");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-
-		border-radius: 16px;
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.logo-top {
+		width: 120px;
+		aspect-ratio: 16/9;
+		object-fit: cover;
 	}
 
 	.container__description {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-
-		width: 55%;
 
 		padding: 0 2rem;
 	}
@@ -40,7 +33,7 @@ export const Footer = styled.footer`
 	}
 
 	h3:last-child {
-		color: #00c6ff;
+		color: #8000ff;
 	}
 
 	@media screen and (max-width: 1024px) {
@@ -48,16 +41,6 @@ export const Footer = styled.footer`
 		flex-direction: column;
 		align-items: center;
 		padding: 1rem 0;
-
-		.container__image {
-			width: 90%;
-			height: 96px;
-			object-fit: contain;
-
-			h3 {
-				display: none;
-			}
-		}
 
 		.container__description {
 			margin-top: 1rem;

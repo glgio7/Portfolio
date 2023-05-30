@@ -1,10 +1,11 @@
-import PageTitle from "../../components/PageTitle";
+import Title from "../../components/Title";
 import Project from "../../components/Project";
+import * as S from "./styles";
 
 const ProjectsPage = () => {
 	return (
-		<>
-			<PageTitle text={"Projects - Technologies & Short Description"} />
+		<S.ProjectsPage>
+			<Title text={"Projects"} className="alternative-title" />
 			<Project
 				name={"Climaki"}
 				screenshot={"screenshot-climaki.png"}
@@ -131,7 +132,7 @@ const ProjectsPage = () => {
 					"React.js, localStorage, React Router DOM, SPA, React Hooks, Context API, ThemeProvider from Styled Components & more."
 				}
 			/>
-		</>
+		</S.ProjectsPage>
 	);
 };
 

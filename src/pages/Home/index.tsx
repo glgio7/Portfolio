@@ -1,74 +1,166 @@
 import Section from "../../components/Section";
+import { RiArrowDownSLine } from "react-icons/ri";
+import Title from "../../components/Title";
 
-const openingParagraphs = [
-	"Turning ideas into reality, bringing screens to life, and creating the best experiences for users and clients is what motivates me! Combining technical skills, and creativity to build amazing integrated software interfaces that truly satisfy.",
-	"All successful projects require expert professionals from different fields. I am the one who can help you to improve your project, due to my full stack knowledge and overall sight.",
-	"Flexibility, cost savings and easy communication is what I offer you. Let's make it happen and keep transforming the web experience!",
-];
-const aboutMeParagraphs = [
-	"Currently at 26 years old, my first contact with a computer was through games, over 20 years ago. I have always been very curious and games fascinated me, especially when they had interesting stories. So, I quickly developed a huge interest in learning and along with it, skills in conducting research.",
-	"In 2010, when Youtube began to gain popularity in Brazil, I started monetizing some design work for channels. I used tools like Photoshop, After Effects, and Cinema 4D, which gave me knowledge in UI/UX. During this time, I took a technical course in IT and had my first contact with HTML. Years later, encouraged by an uncle for whom I am very grateful, I resumed my studies and became a programmer.",
-	'I have always had a natural ability to observe reality, identify patterns, and make abstractions. Despite innate behavioral tendencies in each person, I believe this skill can be developed by anyone with time, dedication, and the right influences. In addition to being a technology enthusiast, I also have a great interest in psychology. As they say, "we are the average of the people we spend the most time with," and I am grateful for the good influences in my life.',
-];
-const skillsParagraphs = [
-	"General knowledge in logic, grammar, orthogonality, abstractions, and pattern recognition set me apart as a professional. Along with these general skills, I possess extensive knowledge in all technologies in the list above.",
-	"I am most interested in development with React and Typescript. In my work, I frequently use React Hooks, Styled Components, SPA and PWA concepts, API consumption and creation with Node.js.",
-	"Currently, I am studying Systems Analysis and Development at UniAmérica and seek to participate in bootcamps at DIO whenever possible. Additionally, I am currently part of a scholarship program at Alura offered by Oracle.",
-];
-const contactMe = [
-	"If you're interested in my work, there are 3 reasons why you can get in touch with me. Just click on the \"get in touch\" button or link in the navigation menu, and you'll be redirected.",
-	"∙To discuss a proposal or idea you have in mind that can be executed with my skills.",
-	"∙To clarify any doubts you may have about my work or development process.",
-	"∙To make suggestions on how we can improve the project we're working on together.",
-	"Thank you for visiting, and I look forward to working together!",
-];
+const nextSection = () => {
+	window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+};
 
 const Home = () => {
 	return (
 		<>
-			<Section
-				first={true}
-				imagePath={"/assets/gl-logo.svg"}
-				sectionTitle={"Full-stack Developer"}
-				buttonSpan={"Visit GitHub"}
-				textContent={openingParagraphs}
-				route={"https://github.com/glgio7"}
-			/>
-			<Section
-				imagePath={"/assets/glgioprofile.jpg"}
-				sectionTitle={"About me"}
-				buttonSpan={"Visit LinkedIn"}
-				textContent={aboutMeParagraphs}
-				route={"https://linkedin.com/in/giovane-lucas/"}
-			/>
-			<Section
-				imagePath={"/assets/projects_skills.png"}
-				sectionTitle={"Skills and Projects"}
-				buttonSpan={"Visit Projects"}
-				textContent={skillsParagraphs}
-				skillsList={[
-					"css",
-					"html",
-					"javascript",
-					"typescript",
-					"node",
-					"firebase",
-					"mongodb",
-					"react",
-					"nextjs",
-					"vitejs",
-					"sass",
-					"sc",
-				]}
-				route={"/projects"}
-			/>
-			<Section
-				imagePath={"/assets/contact-image.jpg"}
-				sectionTitle={"Contact-me"}
-				buttonSpan={"Get in touch"}
-				textContent={contactMe}
-				route={"/contact"}
-			/>
+			<Section>
+				<img src="/assets/general/clean-logo.svg" alt="" className="logo-top" />
+				<div className="welcome-container">
+					<h1>
+						A <span>Fullstack</span>
+					</h1>
+					<h1>Developer</h1>
+				</div>
+				<div className="subtitle-container">
+					<p className="p-slogan">
+						Bringing flexibility, cost savings and easy communication in
+						software development.
+					</p>
+					<RiArrowDownSLine
+						className="see-more"
+						onClick={() => nextSection()}
+					/>
+				</div>
+			</Section>
+			<Section>
+				<article>
+					<img
+						src="/assets/general/glgioprofile.jpg"
+						alt=""
+						className="section__image"
+					/>
+				</article>
+				<article>
+					<Title text="About me" />
+					<ul>
+						<li>
+							<span>
+								I was born and raised in the world of computing. In the early
+								2000s, during the internet cafe boom, as a child I realized the
+								potential of technology to connect people. Since then, I have
+								been motivated to explore the possibilities that technology
+								offers.
+							</span>
+						</li>
+						<li>
+							<span>My first jobs were around 2010, with web design.</span>
+						</li>
+						<li>
+							<span>
+								Natural ability to observe reality, identify patterns, and make
+								abstractions.
+							</span>
+						</li>
+						<li>
+							<span>
+								Currently working with Node.js to deliver the best of back-end,
+								front-end and mobile development.
+							</span>
+						</li>
+						<li>
+							<span>
+								Studying Java as my secondary language, I'm always engaged in
+								attending bootcamps and researching articles that add to my
+								knowledge in the field.
+							</span>
+						</li>
+					</ul>
+				</article>
+			</Section>
+			<Section>
+				<article>
+					<img
+						src="/assets/general/linux.png"
+						alt=""
+						className="section__image"
+					/>
+				</article>
+				<article>
+					<Title text="Skills" />
+					<ul>
+						<li>
+							<img src="/assets/skills/html.png" className="skill-icon" />
+							<img src="/assets/skills/css.png" className="skill-icon" />
+							<img src="/assets/skills/javascript.png" className="skill-icon" />
+							<span>The main technologies of web development.</span>
+						</li>
+						<li>
+							<img src="/assets/skills/typescript.png" className="skill-icon" />
+							<img src="/assets/skills/node.png" className="skill-icon" />
+							<span>
+								Typing in development with Node.js and Typescript for well-built
+								software.
+							</span>
+						</li>
+						<li>
+							<img src="/assets/skills/react.png" className="skill-icon" />
+							<img src="/assets/skills/vitejs.png" className="skill-icon" />
+							<img src="/assets/skills/nextjs.png" className="skill-icon" />
+							<span>
+								A popular library for building dynamic interfaces and the best
+								frameworks.
+							</span>
+						</li>
+						<li>
+							<img src="/assets/skills/firebase.png" className="skill-icon" />
+							<img src="/assets/skills/mongodb.png" className="skill-icon" />
+							<span>
+								Firebase is a base platform that can streamline software
+								development and MongoDB, the most widely used NoSQL database.
+							</span>
+						</li>
+						<li>
+							<img src="/assets/skills/sass.png" className="skill-icon" />
+							<img src="/assets/skills/sc.png" className="skill-icon" />
+							<span>
+								A CSS preprocessor and a styling framework that brings
+								convenience in development with React.js.
+							</span>
+						</li>
+					</ul>
+				</article>
+			</Section>
+			<Section>
+				<article>
+					<img
+						src="/assets/general/certifications.png"
+						alt=""
+						className="section__image"
+					/>
+				</article>
+				<article>
+					<Title text="Certifications" />
+					<ul>
+						<li>
+							<h3>Oracle and Alura</h3>
+							<span>
+								Certified by Oracle and Alura as a Front-End Developer
+							</span>
+						</li>
+						<li>
+							<h3>DIO</h3>
+							<span>Certified in development with React and Typescript</span>
+						</li>
+						<li>
+							<h3>ADA Santander</h3>
+							<span>
+								Studying Back-end Development in a course offered by Santander
+								Bank.
+							</span>
+						</li>
+						<li>
+							<h3>Descomplica University</h3>
+							<span>Studying Systems Analysis and Development</span>
+						</li>
+					</ul>
+				</article>
+			</Section>
 		</>
 	);
 };

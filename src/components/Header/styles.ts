@@ -45,6 +45,9 @@ export const Header = styled.header<{ scrolled: boolean }>`
 	span:first-child {
 		margin-right: 1rem;
 	}
+	span:last-of-type {
+		color: #7000ee;
+	}
 
 	.menu {
 		display: none;
@@ -67,12 +70,11 @@ export const Header = styled.header<{ scrolled: boolean }>`
 
 		font-weight: bold;
 
-		color: ${({ scrolled }) => (scrolled ? "rgba(0, 55, 200, 1)" : "#fff")};
+		color: ${({ scrolled }) => (scrolled ? "#7000ee" : "#fff")};
 
 		transition: all 300ms;
 
 		&:hover {
-			color: ${({ scrolled }) => (scrolled ? "#00c6ff" : "#9900ff")};
 			opacity: 0.75;
 		}
 	}

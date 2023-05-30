@@ -19,22 +19,31 @@ const Project = ({
 	technologies,
 }: ProjectProps) => {
 	return (
-		<S.ProjectContainer>
-			<div className="image-container">
-				<img src={`/assets/screenshots/${screenshot}`} />
-			</div>
+		<S.ProjectContainer onClick={() => {}}>
+			<article>
+				<img
+					src={`/assets/screenshots/${screenshot}`}
+					className="project-image"
+				/>
+				<div className="description">
+					<p>{description}</p>
+					<a href={link} target="_blank" className="visit-link">
+						<Button>Visit</Button>
+					</a>
+				</div>
+			</article>
 			<article>
 				<h1>
 					<img src={`/assets/projects/${iconPath}`} className="icon" />
 					{name}
 				</h1>
-				<p>{description}</p>
-				<h2>
-					Technologies:<span>{technologies}</span>
-				</h2>
-				<a href={link} target="_blank" className="visit-link">
-					<Button>Visit</Button>
-				</a>
+				<h2>Technologies</h2>
+				<span>{technologies}</span>
+				{window.innerWidth <= 420 && (
+					<span className="details">
+						Click on project image to more details.{" "}
+					</span>
+				)}
 			</article>
 		</S.ProjectContainer>
 	);

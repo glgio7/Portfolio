@@ -26,14 +26,13 @@ body {
   width: 100%;
   min-height: 100vh;
 
-  overflow-x: hidden;
   overflow-y: scroll;
 
   position: relative;
 
   z-index: 5;
 
-  background-color: #101010;
+  background-color: #000;
 }
 `;
 
@@ -45,7 +44,9 @@ export const Background = styled.div`
 	width: 100vw;
 	height: 100vh;
 
-	background-image: url("/assets/landscape.jpg");
+	opacity: 0.3;
+
+	background-image: url("/assets/general/landscape.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 `;

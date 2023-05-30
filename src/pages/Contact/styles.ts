@@ -1,14 +1,51 @@
 import styled from "styled-components";
 
+export const Contact = styled.main`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.alternative-title {
+		text-align: center;
+	}
+
+	.file-download {
+		font-size: 48px;
+		color: #fff;
+		text-align: center;
+	}
+
+	.util-container {
+		margin-block: 2rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.util-container__icon {
+		width: 48px;
+		height: 48px;
+
+		padding: 3px;
+
+		margin-inline: 6px;
+
+		background-color: #fff;
+
+		border-radius: 10px;
+
+		object-fit: cover;
+		aspect-ratio: 1;
+	}
+`;
+
 export const Form = styled.form`
 	display: flex;
 	flex-direction: column;
 
 	margin: 0 auto;
 	padding: 1rem;
-
-	margin-top: 1rem;
-	margin-bottom: 2rem;
 
 	width: 80%;
 	background-color: #fff;
@@ -38,10 +75,10 @@ export const Form = styled.form`
 	}
 
 	textarea {
-		padding: 0.25rem 1rem;
+		padding: 1rem;
 
 		min-height: 200px;
-		min-width: 100%;
+		width: 100%;
 
 		color: #fff;
 		background-color: #101010;
@@ -60,8 +97,8 @@ export const Form = styled.form`
 
 		height: 3rem;
 
-		background-color: #0055ee;
-		color: #fff;
+		background-color: #000;
+		color: #8000ee;
 
 		font-size: 1rem;
 		font-weight: bold;
@@ -69,8 +106,12 @@ export const Form = styled.form`
 		transition: all 300ms;
 
 		&:hover {
-			background-color: rgba(0, 55, 200, 1);
+			background-color: #050505;
 		}
+	}
+
+	@media screen and (max-width: 900px) {
+		width: 90%;
 	}
 `;
 

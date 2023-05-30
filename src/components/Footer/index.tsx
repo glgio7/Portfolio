@@ -3,7 +3,7 @@ import * as S from "./styles";
 const Footer = () => {
 	return (
 		<S.Footer>
-			<div className="container__image"></div>
+			<img src="/assets/general/clean-logo.svg" alt="" className="logo-top" />
 			<div className="container__description">
 				<h3>Full Stack Developer | Front-End Development specialist.</h3>
 				<h3>
