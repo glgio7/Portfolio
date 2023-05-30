@@ -39,11 +39,9 @@ const Project = ({
 				</h1>
 				<h2>Technologies</h2>
 				<span>{technologies}</span>
-				{window.innerWidth <= 420 && (
-					<span className="details">
-						Click on project image to more details.{" "}
-					</span>
-				)}
+				<span className="details">
+					Click on project image to more details.{" "}
+				</span>
 			</article>
 		</S.ProjectContainer>
 	);
