@@ -1,22 +1,31 @@
-import { useForm, ValidationError } from "@formspree/react";
-import { useNavigate } from "react-router-dom";
-import Title from "../../components/Title";
 import * as S from "./styles";
+import Title from "../../components/Title";
 import Section from "../../components/Section";
 import { RiArrowDownSLine, RiFile2Fill } from "react-icons/ri";
+import { useMail } from "../../hooks/useMail";
+import { useState } from "react";
 
 const nextSection = () => {
 	window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
 };
 
 const ContactPage = () => {
-	const navigate = useNavigate();
-	const [state, handleSubmit] = useForm(import.meta.env.VITE_APP_FORMKEY);
+	const { state, handleSubmit } = useMail();
+	const [form, setForm] = useState({
+		name: "",
+		address: "",
+		message: "",
+	});
+
 	if (state.succeeded) {
 		window.alert("Thanks for your interest! I'll get in touch soon.");
-		navigate("/");
-		window.scrollTo(0, 0);
 	}
+
+	const handleForm = (field: string, value: string) => {
+		setForm((form) => {
+			return { ...form, [field]: value };
+		});
+	};
 
 	return (
 		<S.Contact>
@@ -46,28 +55,42 @@ const ContactPage = () => {
 			</Section>
 			<Section>
 				<Title text={"Form"} className="alternative-title" />
-				<S.Form onSubmit={handleSubmit}>
+				<S.Form
+					onSubmit={(e) => {
+						e.preventDefault();
+						handleSubmit(form);
+					}}
+				>
 					<label htmlFor="name">Name</label>
-					<input type="text" id="name" name="name" required />
-					<ValidationError prefix="Name" field="name" errors={state.errors} />
+					<input
+						type="text"
+						id="name"
+						name="name"
+						required
+						onChange={(e) => handleForm("name", e.target.value)}
+					/>
 
 					<label htmlFor="email">Email</label>
-					<input type="email" id="email" name="email" required />
-					<ValidationError prefix="Email" field="email" errors={state.errors} />
+					<input
+						type="email"
+						id="email"
+						name="email"
+						required
+						onChange={(e) => handleForm("address", e.target.value)}
+					/>
 
 					<label htmlFor="message">Message</label>
-					<textarea id="message" name="message" required />
-					<ValidationError
-						prefix="Message"
-						field="message"
-						errors={state.errors}
+					<textarea
+						id="message"
+						name="message"
+						required
+						onChange={(e) => handleForm("message", e.target.value)}
 					/>
+
 					{!state.submitting && (
-						<input
-							disabled={state.submitting}
-							type="submit"
-							value="Send form"
-						/>
+						<button disabled={state.submitting} type="submit">
+							Send form
+						</button>
 					)}
 					{state.submitting && (
 						<S.FormLoader>

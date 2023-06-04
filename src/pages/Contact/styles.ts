@@ -89,7 +89,7 @@ export const Form = styled.form`
 		resize: none;
 	}
 
-	input[type="submit"] {
+	button[type="submit"] {
 		cursor: pointer;
 
 		border: none;
@@ -98,12 +98,17 @@ export const Form = styled.form`
 		height: 3rem;
 
 		background-color: #000;
-		color: #8000ee;
 
 		font-size: 1rem;
 		font-weight: bold;
 
 		transition: all 300ms;
+
+		color: #fff;
+
+		&::first-letter {
+			color: #7000ee;
+		}
 
 		&:hover {
 			background-color: #050505;
