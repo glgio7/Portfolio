@@ -3,23 +3,32 @@ import Title from "../../components/Title";
 import Section from "../../components/Section";
 import { RiArrowDownSLine, RiFile2Fill } from "react-icons/ri";
 import { useMail } from "../../hooks/useMail";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const nextSection = () => {
 	window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
 };
 
 const ContactPage = () => {
-	const { state, handleSubmit } = useMail();
-	const [form, setForm] = useState({
+	const defaultForm = {
 		name: "",
 		address: "",
 		message: "",
-	});
+	};
 
-	if (state.succeeded) {
-		window.alert("Thanks for your interest! I'll get in touch soon.");
-	}
+	const { state, handleSubmit } = useMail();
+	const [form, setForm] = useState(defaultForm);
+
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		if (state.succeeded) {
+			setForm(defaultForm);
+			navigate("/");
+			window.alert("Thanks for your interest! I'll get in touch soon.");
+		}
+	}, [state.succeeded]);
 
 	const handleForm = (field: string, value: string) => {
 		setForm((form) => {
