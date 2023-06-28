@@ -5,7 +5,7 @@ import * as S from "./styles";
 const ProjectsPage = () => {
 	return (
 		<S.ProjectsPage>
-			<Title text={"Projects"} className="alternative-title" />
+			<Title text={"Main Projects"} className="alternative-title" />
 			<Project
 				name={"Climaki"}
 				screenshot={"screenshot-climaki.png"}
@@ -31,6 +31,18 @@ const ProjectsPage = () => {
 				}
 			/>
 			<Project
+				name={"Ifood Helper"}
+				screenshot={"screenshot-ifoodhelper.png"}
+				iconPath={"ifoodhelper-logo.png"}
+				description={
+					"Ifood Helper is an app for app delivery people inspired by the Waze app. The user must perform a simple registration to take advantage of all the features, such as adding and evaluating the alerts already added on the map. Negatively rated alerts are deleted from the database after receiving 3 negative votes."
+				}
+				link={"https://ifoodhelper.vercel.app"}
+				technologies={
+					"Front-end: Typescript, React + Vite, Leaflet, OpenStreetMap API, Axios, Custom Hooks, Styled Components & more. Back-end: Typescript, Clean Architecture, TDD with Vitest, Cors, Express, MongoDB, Bcrypt, JWT."
+				}
+			/>
+			<Project
 				name={"Watchous"}
 				screenshot={"screenshot-watchous.png"}
 				iconPath={"watchous-logo.png"}
@@ -41,48 +53,6 @@ const ProjectsPage = () => {
 				technologies={
 					"Typescript PWA. Front-end: React + Vite, TMDB API, Axios, Custom Hooks, Styled Components & more. Back-end: TS-Node-dev, Cors, Express, MongoDB, Bcrypt, JWT."
 				}
-			/>
-			<Project
-				name={"GitHub Wiki"}
-				screenshot={"screenshot-github-wiki.png"}
-				iconPath={"github-wiki-logo.png"}
-				description={
-					"This project is a simple application that uses the GitHub API to list a user's repositories. It was developed in response to a challenge proposed by the DIO bootcamp platform. Users can remove repositories from the list and access the link to each repository when performing a search."
-				}
-				link={"https://dio-githubwiki.vercel.app"}
-				technologies={
-					"React.js, GitHub API, SPA, React Hooks, Styled Components & more."
-				}
-			/>
-			<Project
-				name={"Central Sight Alura"}
-				screenshot={"screenshot-centralsight.png"}
-				iconPath={"centralsight-logo.png"}
-				description={
-					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
-				}
-				link={"https://centralsight.netlify.app/"}
-				technologies={"Vanilla Javascript, HTML, CSS, Canva, & more."}
-			/>
-			<Project
-				name={"Calculadora DIO"}
-				screenshot={"screenshot-calc-dio.png"}
-				iconPath={"calc-dio-logo.png"}
-				description={
-					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
-				}
-				link={"https://dio-calculator-six.vercel.app"}
-				technologies={"React.js, useState, Styled Components & more."}
-			/>
-			<Project
-				name={"Decoder Oracle"}
-				screenshot={"screenshot-decoder.png"}
-				iconPath={"decoder-logo.png"}
-				description={
-					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
-				}
-				link={"https://glgio7.github.io/ChallengeOne-Decodificador/"}
-				technologies={"Vanilla Javascript, HTML, CSS, & more."}
 			/>
 			<Project
 				name={"Iching Online"}
@@ -131,6 +101,49 @@ const ProjectsPage = () => {
 				technologies={
 					"React.js, localStorage, React Router DOM, SPA, React Hooks, Context API, ThemeProvider from Styled Components & more."
 				}
+			/>
+			<Title text={"Bootcamps"} className="alternative-title" />
+			<Project
+				name={"GitHub Wiki"}
+				screenshot={"screenshot-github-wiki.png"}
+				iconPath={"github-wiki-logo.png"}
+				description={
+					"This project is a simple application that uses the GitHub API to list a user's repositories. It was developed in response to a challenge proposed by the DIO bootcamp platform. Users can remove repositories from the list and access the link to each repository when performing a search."
+				}
+				link={"https://dio-githubwiki.vercel.app"}
+				technologies={
+					"React.js, GitHub API, SPA, React Hooks, Styled Components & more."
+				}
+			/>
+			<Project
+				name={"Central Sight Alura"}
+				screenshot={"screenshot-centralsight.png"}
+				iconPath={"centralsight-logo.png"}
+				description={
+					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
+				}
+				link={"https://centralsight.netlify.app/"}
+				technologies={"Vanilla Javascript, HTML, CSS, Canva, & more."}
+			/>
+			<Project
+				name={"Calculadora DIO"}
+				screenshot={"screenshot-calc-dio.png"}
+				iconPath={"calc-dio-logo.png"}
+				description={
+					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
+				}
+				link={"https://dio-calculator-six.vercel.app"}
+				technologies={"React.js, useState, Styled Components & more."}
+			/>
+			<Project
+				name={"Decoder Oracle"}
+				screenshot={"screenshot-decoder.png"}
+				iconPath={"decoder-logo.png"}
+				description={
+					"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas quae amet placeat error, magnam expedita aliquam recusandae possimus aspernatur similique repellendus, laborum esse nihil obcaecati. Eligendi eius illo numquam."
+				}
+				link={"https://glgio7.github.io/ChallengeOne-Decodificador/"}
+				technologies={"Vanilla Javascript, HTML, CSS, & more."}
 			/>
 		</S.ProjectsPage>
 	);
