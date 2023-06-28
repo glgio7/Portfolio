@@ -112,7 +112,7 @@ const ContactPage = () => {
 				<div className="util-container">
 					<Title text={"Download CV"} className="alternative-title" />
 					<a
-						href="/assets/files/curriculum.pdf"
+						href="/assets/files/curriculum-pt-br.pdf"
 						download
 						className={"file-download"}
 					>
