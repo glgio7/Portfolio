@@ -60,6 +60,8 @@ export const ProjectDetails = styled.article`
 	h2,
 	span {
 		font-size: 1.1rem;
+		display: block;
+		margin-block: 0.5rem;
 	}
 
 	.icon {
@@ -75,9 +77,24 @@ export const ProjectDetails = styled.article`
 	}
 
 	h2 {
-		margin-block: 0.5rem;
+		position: relative;
+		width: fit-content;
 
-		color: #7000ee;
+		margin-block: 0.75rem;
+		&::before {
+			content: "";
+
+			background: #00c6ff;
+
+			height: 2px;
+
+			border-radius: 50%;
+
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			right: 0;
+		}
 	}
 
 	.details-tip {
@@ -88,11 +105,26 @@ export const ProjectDetails = styled.article`
 		.details-tip {
 			display: block;
 
-			color: #00c6ff;
+			position: relative;
 
 			margin-top: 0.5rem;
 
-			width: 100%;
+			width: fit-content;
+
+			&::before {
+			content: "";
+
+			background: #00c6ff;
+
+			height: 2px;
+
+			border-radius: 50%;
+
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			right: 0;
+		}
 		}
 	}
 `;
@@ -129,8 +161,6 @@ export const Description = styled.div`
 		transform: scaleY(1);
 		opacity: 1;
 	}
-
-
 
 	.visit-link {
 		margin-block: 1rem;
