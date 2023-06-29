@@ -1,14 +1,6 @@
 import * as S from "./styles";
 import Button from "../Button";
-
-type ProjectProps = {
-	screenshot: string;
-	iconPath: string;
-	name: string;
-	link: string;
-	description: string;
-	technologies: string;
-};
+import { ProjectProps } from "./types";
 
 const Project = ({
 	screenshot,
@@ -27,7 +19,14 @@ const Project = ({
 					{name}
 				</h1>
 				<h2>Technologies</h2>
-				<span>{technologies}</span>
+				<span>
+					<strong>Front-end: </strong>
+					{technologies.frontend}
+				</span>
+				<span>
+					<strong>Back-end: </strong>
+					{technologies.backend}
+				</span>
 				<span className="details-tip">
 					Click on project image to more details.{" "}
 				</span>
